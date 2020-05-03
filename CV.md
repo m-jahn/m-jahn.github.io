@@ -31,4 +31,11 @@ model biotechnological process using *Pseudomonas putida*’
 - [Twitter](https://twitter.com/mich_jahn)
 - [KTH home page](https://www.kth.se/profile/mjahn)
 
+## Peer review
 
+I'm active in peer review (list as of May 2020). Check my [Publons](https://publons.com/review/author/AzKdBNNk/) account for latest stats.
+
+- reviews for Frontiers in Microbiology: 1
+- reviews for Analyst: 1
+- reviews for Cytometry: 2
+- reviews for Microbial Cell Factories: 5

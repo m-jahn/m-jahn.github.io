@@ -9,3 +9,4 @@ author: Michael Jahn
 - [Resources for scientific projects](projects.md)
 - [My publications](publications.md)
 - [Curriculum vitae](CV.md)
+
