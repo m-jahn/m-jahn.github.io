@@ -1,10 +1,9 @@
 ---
 layout: page
 title: "Publications"
-permalink: /bublications/
+permalink: /publications/
+feature_image: "/png/home.png"
 ---
-
-## Selected publications
 
 Lun Yao, Kiyan Shabestary, Sara M. Björk, Johannes Asplund-Samuelsson, Haakan N. Joensson, **Michael Jahn**, Elton P. Hudson.
 Pooled CRISPRi screening of the cyanobacterium Synechocystis sp PCC 6803 for enhanced industrial phenotypes. 

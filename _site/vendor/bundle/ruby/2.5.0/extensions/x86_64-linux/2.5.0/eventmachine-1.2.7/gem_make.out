@@ -1,0 +1,16 @@
+current directory: /home/michael/Documents/SciLifeLab/Resources/R_projects/m-jahn.github.io/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/bin/ruby2.5 -r ./siteconf20200504-3069-ig0393.rb extconf.rb
+creating Makefile
+
+current directory: /home/michael/Documents/SciLifeLab/Resources/R_projects/m-jahn.github.io/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /home/michael/Documents/SciLifeLab/Resources/R_projects/m-jahn.github.io/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /home/michael/Documents/SciLifeLab/Resources/R_projects/m-jahn.github.io/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20200504-3069-i31t5w

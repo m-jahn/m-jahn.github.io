@@ -1,1 +1,64 @@
-theme: jekyll-theme-slate
+# Set theme
+remote_theme: daviddarnes/alembic
+
+# File excludes
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+
+# Set plugins
+plugins:
+- jekyll-sitemap
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-default-layout
+- jekyll-feed
+- jemoji
+- jekyll-remote-theme
+
+# Site settings
+url: 'https://m-jahn.gitub.io'
+baseurl: ''
+title: 'm-jahn.gitub.io'
+description: 'github.io | Michael Jahn, PhD | Scilifelab - KTH, Stockholm, SE'
+permalink: pretty
+
+# Pagination
+paginate: 5
+paginate_path: blog/page:num
+
+# Header nav
+navigation_header:
+- title: Home
+  url: /
+- title: About
+  url: /about/
+- title: Projects
+  url: /projects/
+- title: R packages
+  url: /rpackages/
+- title: Metabolic models
+  url: /models/
+- title: Publications
+  url: /publications/
+- title: CV
+  url: /CV/
+- title: Blog
+  url: /blog/
+
+# Footer nav
+navigation_footer:
+- title: Back to top
+  url: "#top"
+
+# Collections
+collections:
+  posts:
+    title: Europe by numbeRs
+    output: true
+    description:
+    feature_text:
+    feature_image: "/png/home.png"

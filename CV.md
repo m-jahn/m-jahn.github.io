@@ -2,6 +2,7 @@
 layout: page
 title: "Curriculum vitae"
 permalink: /CV/
+feature_image: "/png/home.png"
 ---
 
 ### Current position
@@ -17,11 +18,21 @@ model biotechnological process using *Pseudomonas putida*’
 
 ### Conference presentations
 
-- **2015 | Single Cell VI** – 6 th International Conference on Analysis of Microbial Cells at the Single Cell Level, Retz (Austria)
-- **2014 | DGFZ** – 24 th Annual Conference of the German Society for Cytometry, Dresden
-- **2014 | ECB16** – 16 th European Congress on Biotechnology, Edinburgh
-- **2013 | RPP7** – 7 th European Conference on Recombinant Protein Production, Ulm, Germany
-- **2012 | DGFZ** – 22 nd Annual Conference of the German Society for Cytometry, Bonn
+- **2019** - **NPC 14** - Nordic congress on photosynthesis, Turku, Finland
+- **2018** - **4th Applied Synthetic Biology meeting** - Toulouse, France
+- **2015** - **Single Cell VI** - 6 th International Conference on Analysis of Microbial Cells at the Single Cell Level, Retz (Austria)
+- **2014** - **DGFZ** - 24 th Annual Conference of the German Society for Cytometry, Dresden
+- **2014** - **ECB16** - 16 th uropean Congress on Biotechnology, Edinburgh
+- **2013** - **RPP7** - 7 th European Conference on Recombinant Protein Production, Ulm, Germany
+- **2012** - **DGFZ** - 22 nd Annual Conference of the German Society for Cytometry, Bonn
+
+### Awarded grants
+
+- **Investigation of protein resource allocation in the model CO2 fixing bacterium Ralstonia eutropha** (Swedish: Undersökning av proteiners resursfördelning i en modell för CO2-fixerande bakterier, Ralstonia eutropha). 
+Funding agency: FORMAS. 
+Project number: 2019-01491. 
+Project leader: Michael Jahn.
+Awarded funding: 2020-01-01-2021-12-31: 2 000 000 SEK
 
 ### Social media and platforms
 

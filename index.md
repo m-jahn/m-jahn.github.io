@@ -1,11 +1,14 @@
 ---
-title: m-jahn.github.io
-author: Michael Jahn
+title: Michael Jahn, PhD | github.io
+layout: page
+feature_image: "/png/home.png"
+# feature_text: |
+#   ## m-jahn.github.io
 ---
 
-## Quick links
+### Quick links
 
-- [About this page](about.md)
-- [Resources for scientific projects](projects.md)
-- [My publications](publications.md)
-- [Curriculum vitae](CV.md)
+- [About this page](about)
+- [Resources for scientific projects](projects)
+- [My publications](publications)
+- [Curriculum vitae](CV)

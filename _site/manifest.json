@@ -1,0 +1,9 @@
+{
+  "lang": "en-US",
+  "name": "m-jahn.gitub.io",
+  "short_name": "m-jahn.gitub.io",
+  "theme_color": "#24292e",
+  "background_color": "#ffffff",
+  "start_url": "/",
+  "display": "standalone"
+}
