@@ -50,3 +50,7 @@ I'm active in peer review (list as of May 2020). Check my [Publons](https://publ
 - reviews for Analyst: 1
 - reviews for Cytometry: 2
 - reviews for Microbial Cell Factories: 5
+
+-----
+
+{% include nav-share.html %}

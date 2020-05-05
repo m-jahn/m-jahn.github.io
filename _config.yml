@@ -24,6 +24,7 @@ url: 'https://m-jahn.gitub.io'
 baseurl: ''
 title: 'm-jahn.gitub.io'
 description: 'github.io | Michael Jahn, PhD | Scilifelab - KTH, Stockholm, SE'
+email: 'michael.jahn@scilifelab.se'
 permalink: pretty
 
 # Pagination
@@ -53,6 +54,17 @@ navigation_header:
 navigation_footer:
 - title: Back to top
   url: "#top"
+- title: Home
+  url: /
+- title: About
+  url: /about/
+- title: Blog
+  url: /blog/
+
+# Buttons for sharing links
+sharing_links:
+  Twitter: "#0d94e7"
+  Email: "#999999"
 
 # Collections
 collections:

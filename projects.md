@@ -10,8 +10,9 @@ This page is a collection of resources for ongoing (or finished) research projec
 
 ### R notebooks for CRISPRi library in *Synechocystis*
 
-Published as *Pooled CRISPRi screening of the cyanobacterium Synechocystis sp PCC 6803 for enhanced industrial phenotypes* in [Nature Communications](https://www.nature.com/articles/s41467-020-15491-7)
-Preprint available at [BioRxive](https://www.biorxiv.org/content/10.1101/823534v2)
+Now published as *Pooled CRISPRi screening of the cyanobacterium Synechocystis sp PCC 6803 for enhanced industrial phenotypes* in [Nature Communications](https://www.nature.com/articles/s41467-020-15491-7)!
+
+Preprint available at [BioRxive](https://www.biorxiv.org/content/10.1101/823534v2).
 
 **Background:**
 We designed a CRISPRi respression library for the cyanobacterium *Synechocystis* sp. PCC6803. The library is based on the inhibitory effect of the dCas9 gene and a corresponding short guide RNA (sgRNA) that conveys specificity to the enzyme. In each cell, the dCas9 enzyme will bind a unique sequence variant of the sgRNA. The dCas9-sgRNA complex then binds a region close to the promoter of the target gene and will repress transcription by physically blocking RNA polymerase. By using a pool of thousands of different sgRNAs, transcription of all genes of a bacterial strain
@@ -34,3 +35,6 @@ Links to preliminary BioCircos maps showing the global using gene expression pro
 - [BioCircos map for Ralstonia eutropha, chromosome 1](https://m-jahn.github.io/BioCircos.R/RE_chromosome_1.html)
 - [BioCircos map for Ralstonia eutropha, chromosome 2](https://m-jahn.github.io/BioCircos.R/RE_chromosome_2.html)
 
+-----
+
+{% include nav-share.html %}

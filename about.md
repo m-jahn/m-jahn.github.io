@@ -20,3 +20,6 @@ Get in touch   with me via:
 - [Twitter](https://twitter.com/mich_jahn)
 - [KTH home page](https://www.kth.se/profile/mjahn)
 
+-----
+
+{% include nav-share.html %}

@@ -81,3 +81,7 @@ Temporal and spatial properties of a yeast multi-cellular amplification system b
 PMID: 24233076
 PMC: PMC3871124
 [DOI: 10.3390/s131114511](http://doi.org/10.3390/s131114511)
+
+-----
+
+{% include nav-share.html %}
