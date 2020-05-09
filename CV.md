@@ -2,14 +2,14 @@
 layout: page
 title: "Curriculum vitae"
 permalink: /CV/
-feature_image: "/png/home.png"
+feature_image: "/png/header/header_random_D.png"
 ---
 
 ### Current position
 
 - **2016 until now** - Postdoctoral researcher at Scilifelab (KTH), Stockholm, SE
 
-### Education and Work
+### Education and Work  
 
 - **July 2015** - **Graduated Doctor rerum naturalium**, at the University of Leipzig, Germany, with summa cum laude (1.0)
 - **2011-2015** - **PhD studies**, Group of Flow Cytometry (Prof. Susann Müller), Dept. Environmental Microbiology, **Helmholtz-Centre for Environmental Research, Leipzig**, Thesis: ’Characterization of population heterogeneity in a

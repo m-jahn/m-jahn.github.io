@@ -2,7 +2,7 @@
 layout: page
 title: "Projects"
 permalink: /projects/
-feature_image: "/png/home.png"
+feature_image: "/png/header/header_random_C.png"
 ---
 
 This page is a collection of resources for ongoing (or finished) research projects. Most of these resources are bioinformatic pipelines related to publications.
@@ -37,4 +37,4 @@ Links to preliminary BioCircos maps showing the global using gene expression pro
 
 -----
 
-{% include nav-share.html %}
+{% include nav-share.html %}  

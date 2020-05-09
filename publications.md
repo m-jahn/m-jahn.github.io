@@ -2,7 +2,7 @@
 layout: page
 title: "Publications"
 permalink: /publications/
-feature_image: "/png/home.png"
+feature_image: "/png/header/header_random_B.png"
 ---
 
 Lun Yao, Kiyan Shabestary, Sara M. Björk, Johannes Asplund-Samuelsson, Haakan N. Joensson, **Michael Jahn**, Elton P. Hudson.

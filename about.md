@@ -2,7 +2,7 @@
 layout: page
 title: "About me"
 permalink: /about/
-feature_image: "/png/home.png"
+feature_image: "/png/header/header_random_A.png"
 ---
 
 <img src="/png/pic2_small.png" width="30%" align="right"/>
@@ -22,4 +22,4 @@ Get in touch   with me via:
 
 -----
 
-{% include nav-share.html %}
+{% include nav-share.html %}  

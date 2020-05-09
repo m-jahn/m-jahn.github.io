@@ -1,7 +1,7 @@
 ---
 title: Michael Jahn, PhD | github.io
 layout: page
-feature_image: "/png/home.png"
+feature_image: "/png/header/header_random_D.png"
 ---
 
 ### Quick links
