@@ -32,7 +32,7 @@ This R notebook describes the addition and curation of COG (cluster of orthologo
 
 - [_Ralstonia eutropha_ COG re-annotation](https://m-jahn.github.io/R-notebooks/Ralstonia_H16_genome_re_annotation.nb.html)
 
-This R notebook describes the selection of constraints for a resource allocation model ([Metabolic models](https://m-jahn.github.io/models)
+This R notebook describes the selection of constraints for a resource allocation model (see also [Metabolic models](https://m-jahn.github.io/models))
 
 - [_Ralstonia eutropha_ model constraints](https://m-jahn.github.io/R-notebooks/Ralstonia_model_constraints.nb.html)
 

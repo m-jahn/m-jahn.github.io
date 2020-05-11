@@ -1266,7 +1266,8 @@ body {
     max-height: 5rem; }
 
 .nav a {
-  padding: .2rem; }
+  font-size: 1.4rem;
+  padding: .2 rem; }
 .nav--social a {
   display: inline-block;
   line-height: 1; }

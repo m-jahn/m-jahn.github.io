@@ -26,6 +26,7 @@ title: 'm-jahn.gitub.io'
 description: 'github.io | Michael Jahn, PhD | Scilifelab - KTH, Stockholm, SE'
 email: 'michael.jahn@scilifelab.se'
 permalink: pretty
+logo: "/png/header/logo_gh.png"
 
 # Pagination
 paginate: 5
