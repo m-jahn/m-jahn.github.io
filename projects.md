@@ -5,7 +5,22 @@ permalink: /projects/
 feature_image: "/png/header/header_random_C.png"
 ---
 
-This page is a collection of resources for ongoing (or finished) research projects. Most of these resources are bioinformatic pipelines related to publications.
+This page gives an overview about ongoing (or finished) research projects. It is also a collection of resources like bioinformatic pipelines and links to the related publications.
+
+### *Ralstonia eutropha* protein resource allocation
+
+**Background:**
+*Ralstonia eutropha* a.k.a. *Cupriavidus necator* is a highly interesting bacterium for its metabolic properties. It is a model organism both for the production of bioplastics (polyhydroxy butyrate, PHB) as well as for litho-autotrophic growth. This means it has the special ability to grow solely on CO2 as carbon source and hydrogen (H2) as energy source. These porperties make it highly interesting for biotech applications, where we could picture a biorefinery taking CO2 and H2 as (waste) gas streams and feeding a population of *R. eutropha* that will turn these substrates into biomass and product (such as PHB). However, *R. eutropha* is also a cryptic organism with a very large genome (6600 genes), poorly understood metabolism and regulation, and very few genetic tools available. In this project we want to address some of these shortcomings by analyzing growth under a variety of conditions. We will grow wild type and mutant strains with fixed growth rates (chemostat, turbidostat), gather information about gene expression using proteomics, and feed our data back into a mathematic model of the cell (see also [Metabolic models](/models) for details). The focus of this project is to learn more about how a 'large' bacterium with many duplicated genes manages its gene expression resources. Bottlenecks and inefficiencies in gene expression will then be a starting point for the design of new engineered strains. The following links cover some of the work in progress for *R. eutropha*.
+
+
+- [R notebook](https://m-jahn.github.io/R-notebooks/Ralstonia_H16_genome_re_annotation.nb.html) describing the addition and curation of COG (cluster of orthologous groups) terms for *Ralstonia eutropha*
+- [R notebook](https://m-jahn.github.io/R-notebooks/Ralstonia_model_constraints.nb.html) describing the selection of constraints for a resource allocation model (see also [Metabolic models](/models)) 
+
+Links to preliminary BioCircos maps showing the global gene expression profile of *Ralstonia eutropha*. These maps were made using a [modified Biocircos R package](https://github.com/m-jahn/BioCircos.R ).
+
+- [BioCircos map for Ralstonia eutropha, pHG1](https://m-jahn.github.io/BioCircos.R/RE_pHG1.html)
+- [BioCircos map for Ralstonia eutropha, chromosome 1](https://m-jahn.github.io/BioCircos.R/RE_chromosome_1.html)
+- [BioCircos map for Ralstonia eutropha, chromosome 2](https://m-jahn.github.io/BioCircos.R/RE_chromosome_2.html)
 
 
 ### CRISPRi library in *Synechocystis*
@@ -23,26 +38,14 @@ can be repressed, one at a time. The following **R notebooks** detail most of th
 - [_Synechocystis_ CRISPRi library additional tests](https://m-jahn.github.io/R-notebooks/CRISPRi_library_additional_tests.nb.html)
 
 
-### *Ralstonia eutropha* protein resource allocation
+### *Synechocystis* protein resource allocation
 
 **Background:**
-*Ralstonia eutropha* a.k.a. *Cupriavidus necator* is a highly interesting bacterium for its metabolic properties. It is a model organism both for the production of bioplastics (polyhydroxy butyrate, PHB) as well as for litho-autotrophic growth. This means it has the special ability to grow solely on CO2 as carbon source and hydrogen (H2) as energy source. These porperties make it highly interesting for biotech applications, where we could picture a biorefinery taking CO2 and H2 as (waste) gas streams and feeding a population of *R. eutropha* that will turn these substrates into biomass and product (such as PHB). However, *R. eutropha* is also a cryptic organism with a very large genome (6600 genes), poorly understood metabolism and regulation, and very few genetic tools available. In this project we want to address some of these shortcomings by analyzing growth under a variety of conditions. We will grow wild type and mutant strains with fixed growth rates (chemostat, turbidostat), gather information about gene expression using proteomics, and feed our data back into a mathematic model of the cell (see also [Metabolic models](https://m-jahn.github.io/models) for details). The focus of this project is to learn more about how a 'large' bacterium with many duplicated genes manages its gene expression resources. Bottlenecks and inefficiencies in gene expression will then be a starting point for the design of new engineered strains. The following links cover some of the work in progress for *R. eutropha*.
+Cyanobacteria are promising hosts for microbial biotechnology as they convert inorganic CO2 and light into biomass and products. However, low biomass productivity has prevented wider industrial application. In this project we set out to investigate growth bottlenecks using gradual and systematic **limitation of the energy and carbon source (light and CO2, respectively)**. We used shotgun proteomics to investigate protein allocation in the model cyanobacterium *Synechocystis* sp. PCC6803 as it adapts to limitation. We found that cells invest large amounts of resources into a small set of proteins. Of outstanding importance are proteins involved in carbon and light assimilation, as well as the translation machinery. When partitioning the proteome into a few functional sectors, we found that sector sizes changed linearly with growth rate. For example, the translation sector (ribosomes, chaperones) expands proportional to growth rate, confirming the 'growth law' in cyanobacteria. We fed our data into a coarse-grained **cell economy model** where protein costs are explicitly considered and growth rate is maximized. This demonstrated that cyanobacteria actively optimize protein resource allocation depending on environmental cues.
 
-This R notebook describes the addition and curation of COG (cluster of orthologous groups) terms for *Ralstonia eutropha*.
-
-- [_Ralstonia eutropha_ COG re-annotation](https://m-jahn.github.io/R-notebooks/Ralstonia_H16_genome_re_annotation.nb.html)
-
-This R notebook describes the selection of constraints for a resource allocation model (see also [Metabolic models](https://m-jahn.github.io/models))
-
-- [_Ralstonia eutropha_ model constraints](https://m-jahn.github.io/R-notebooks/Ralstonia_model_constraints.nb.html)
-
-
-Links to preliminary BioCircos maps showing the global using gene expression profile of *Ralstonia eutropha*. These maps were made using a [modified Biocircos R package](https://github.com/m-jahn/BioCircos.R ).
-
-- [BioCircos map for Ralstonia eutropha, pHG1](https://m-jahn.github.io/BioCircos.R/RE_pHG1.html)
-- [BioCircos map for Ralstonia eutropha, chromosome 1](https://m-jahn.github.io/BioCircos.R/RE_chromosome_1.html)
-- [BioCircos map for Ralstonia eutropha, chromosome 2](https://m-jahn.github.io/BioCircos.R/RE_chromosome_2.html)
-
+- The study was [published in Cell Reports](http://doi.org/10.1016/j.celrep.2018.09.040)
+- Coarse grained cell economy models are described in [Metabolic models](/models)
+- Label-free proteomics pipelines for openMS/KNIME are [deposited on github](https://github.com/m-jahn/openMS-workflows)
 
 -----
 

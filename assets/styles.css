@@ -856,6 +856,7 @@ a {
   padding-bottom: 3rem;
   padding-top: 3rem; }
 .typeset code, .typeset pre {
+  line-height: 65%;
   background-color: #fafafa;
   font-family: Menlo, monospace; }
 .typeset pre {
