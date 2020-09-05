@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Flat, yet deep - How treemaps can be used to visualize complex data
-feature_image: /png/header/home.png
+feature_image: /png/header/blog.png
 ---
 
 Before we dive directly into the fun of making treemaps, one word

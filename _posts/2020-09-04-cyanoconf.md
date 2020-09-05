@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My talk for the European Cyano conference
-feature_image: /png/header/home.png
+feature_image: /png/header/blog.png
 ---
 
 In a few days starts the **11th European workshop on the biology of

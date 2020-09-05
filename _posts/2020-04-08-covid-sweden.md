@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Is Sweden smarter than the rest of Europe?
-feature_image: /png/header/home.png
+feature_image: /png/header/blog.png
 ---
 
 The corona virus crisis has overshadowed the life of many EU citizens

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Latte pappa - myth or reality?
-feature_image: /png/header/home.png
+feature_image: /png/header/blog.png
 ---
 
 My github activity is in free fall, my email response time is at least

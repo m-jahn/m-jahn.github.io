@@ -34,18 +34,16 @@ library(latticetools)
 library(lattice)
 data(mtcars)
 
-# we can use different variables for x, grouping, and paneling.
-xyplot(mpg ~ factor(cyl) | factor(vs), mtcars,
-  groups = gear, lwd = 2, auto.key = list(columns = 3),
+# we can use a grouping variable similar to other lattice panel functions
+xyplot(mpg ~ factor(cyl), mtcars, 
+  groups = cyl, lwd = 2,
   panel = function(x, y, ...) {
-    panel.barplot(x, y, beside = TRUE, ...)
-    panel.stripplot(x, y, jitter.data = TRUE,
-      horizontal = FALSE, amount = 0.15, ...)
+    panel.barplot(x, y, ...)
   }
 )
 ```
 
-<img src="https://github.com/m-jahn/lattice-tools/raw/master/vignettes/README_files/figure-gfm/unnamed-chunk-2-3.png" align="center" width="80%"/>
+<img src="https://github.com/m-jahn/lattice-tools/raw/master/vignettes/README_files/figure-gfm/unnamed-chunk-4-2.png" align="center" width="80%"/>
 
 ***panel.directlabel***
 
@@ -73,7 +71,7 @@ xyplot(mpg ~ wt | factor(cyl), mtcars,
 )
 ```
 
-<img src="https://github.com/m-jahn/lattice-tools/raw/master/vignettes/README_files/figure-gfm/unnamed-chunk-4-1.png" align="center" width="80%" />
+<img src="https://github.com/m-jahn/lattice-tools/raw/master/vignettes/README_files/figure-gfm/unnamed-chunk-6-1.png" align="center" width="80%" />
 
 
 ### SysbioTreemaps
@@ -84,15 +82,9 @@ Generate and plot **Voronoi treemaps** or **Sunburst treemaps** from hierarchica
 
 **Installation**
 
-The C++ code computing the actual Voronoi tesselation requires the [CGAL](https://www.cgal.org/download.html) library. For installation in
-(Ubuntu-like) Linux systems, open a terminal and execute:
+The C++ code computing the actual Voronoi tesselation requires the [CGAL](https://www.cgal.org/download.html) headers. This requirement is now satisfied with the R package [cgal4h](https://cran.r-project.org/web/packages/cgal4h/index.html) so that local installation of CGAL is no longer required. 
 
-``` bash
-sudo apt install libcgal-dev
-```
-
-To install the package directly from github, use this function from the
-`devtools` package in your R session:
+To install the package directly from github, use this function from the `devtools` package in your R session:
 
 ``` r
 require(devtools)
@@ -136,7 +128,7 @@ drawTreemap(tm, title = "treemap 3",
   title_color = "black")
 ```
 
-<img src="https://github.com/m-jahn/SysbioTreemaps/raw/master/vignettes/png/unnamed-chunk-8-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="https://github.com/m-jahn/SysbioTreemaps/raw/master/vignettes/png/unnamed-chunk-7-1.png" width="100%" style="display: block; margin: auto;" />
 
 -----
 

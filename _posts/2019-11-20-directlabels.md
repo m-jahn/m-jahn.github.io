@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to label points on a scatterplot with R (for lattice)
-feature_image: /png/header/home.png
+feature_image: /png/header/blog.png
 ---
 
 The famous **ggplot2** package for R has numerous packages extending its
