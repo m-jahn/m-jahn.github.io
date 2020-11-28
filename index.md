@@ -1,10 +1,11 @@
 ---
-title: Michael Jahn, PhD  |  Microbial Systems Biology
+title: Michael Jahn, PhD
 layout: page
-feature_image: "/png/header/header_random_D.png"
+feature_image: "/png/header/header_treemap_blur.png"
+feature_text: HOME
 ---
 
-My name is **Michael Jahn** and I am a postdoctoral researcher in the group of Prof. [Paul Hudson](https://www.kth.se/profile/huds/page/2-group-members). I currently live in **Stockholm**, working at the **Science for Life Laboratory** and am formally employed by **KTH, the Royal Technical University** in Sweden.
+Hi! I'm Michael and I'm working as a postdoctoral researcher in the group of Prof. [Paul Hudson](https://www.kth.se/profile/huds/page/2-group-members) at **KTH, the Royal Technical University** in Stockholm, Sweden. Our group works at the **Science for Life Laboratory**, a joint institute of four different universities of the Stockhom area. I work on different projects evolving around **microbial systems biology**, mainly with photo-autotrophic cells such as **cyanobacteria** as the model organism. This website presents some of the projects and resources of my scientific work.
 
 ### Quick links
 

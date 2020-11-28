@@ -2,7 +2,8 @@
 layout: page
 title: "About me"
 permalink: /about/
-feature_image: "/png/header/header_random_A.png"
+feature_image: "/png/header/header_treemap_blur.png"
+feature_text: ABOUT
 ---
 
 <img src="/png/pic2_small.png" width="30%" align="right"/>

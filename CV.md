@@ -2,7 +2,8 @@
 layout: page
 title: "Curriculum vitae"
 permalink: /CV/
-feature_image: "/png/header/header_random_D.png"
+feature_image: "/png/header/header_treemap_blur.png"
+feature_text: CV
 ---
 
 ### Current position
@@ -16,8 +17,9 @@ feature_image: "/png/header/header_random_D.png"
 model biotechnological process using *Pseudomonas putida*’
 - **2005-2011** - **Undergraduate studies in biology**, **Dresden University of Technology (TUD)**, Diploma thesis: ’Dynamic mating pheromone gradients for induction of mating projection and fluorescence in yeast’, group of Prof. Gerhard Rödel.
 
-### Conference presentations
+### Conference presentations (talks)
 
+- **2020** - **EWBC 11** - 11th European Workshop on the Biology of Cyanobacteria, Porto, Portugal (virtual)
 - **2019** - **NPC 14** - Nordic congress on photosynthesis, Turku, Finland
 - **2018** - **4th Applied Synthetic Biology meeting** - Toulouse, France
 - **2015** - **Single Cell VI** - 6 th International Conference on Analysis of Microbial Cells at the Single Cell Level, Retz (Austria)
@@ -44,8 +46,9 @@ Awarded funding: 2020-01-01-2021-12-31: 2 000 000 SEK
 
 ## Peer review
 
-I'm active in peer review (list as of May 2020). Check my [Publons](https://publons.com/review/author/AzKdBNNk/) account for latest stats.
+I'm active in peer review (list as of Nov 2020). Check my [Publons](https://publons.com/review/author/AzKdBNNk/) account for latest stats.
 
+- reviews for Photosynthesis Research: 1
 - reviews for Frontiers in Microbiology: 1
 - reviews for Analyst: 1
 - reviews for Cytometry: 2

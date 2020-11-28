@@ -2,8 +2,15 @@
 layout: page
 title: "R packages"
 permalink: /rpackages/
-feature_image: "/png/header/header_random_B.png"
+feature_image: "/png/header/header_treemap_blur.png"
+feature_text: R PACKAGES
 ---
+
+- [lattice-tools](#lattice-tools)
+- [SysbioTreemaps](#sysbiotreemaps)
+- [ShinyLib](#shinylib)
+- [ShinyProt](#shinyprot)
+- [ShinyMC](#shinymc)
 
 ### lattice-tools
 
@@ -73,10 +80,9 @@ xyplot(mpg ~ wt | factor(cyl), mtcars,
 
 <img src="https://github.com/m-jahn/lattice-tools/raw/master/vignettes/README_files/figure-gfm/unnamed-chunk-6-1.png" align="center" width="80%" />
 
-
 ### SysbioTreemaps
 
-[Link to github repository with documentation](https://github.com/m-jahn/SysbioT  reemaps)
+[Link to github repository with documentation](https://github.com/m-jahn/SysbioTreemaps)
 
 Generate and plot **Voronoi treemaps** or **Sunburst treemaps** from hierarchical data. Treemaps are a visually appealing graphical representation of numerical data using a space-filling approach. A plane or ‘map’ is subdivided into smaller areas called cells. The cells in the map are scaled according to an underlying metric which allows to grasp the hierarchical organization and relative importance of many objects at once. This package contains two different implementations of treemaps, Voronoi treemaps and Sunburst treemaps.
 
@@ -129,6 +135,64 @@ drawTreemap(tm, title = "treemap 3",
 ```
 
 <img src="https://github.com/m-jahn/SysbioTreemaps/raw/master/vignettes/png/unnamed-chunk-7-1.png" width="100%" style="display: block; margin: auto;" />
+
+### ShinyLib
+
+R Shiny based interface for browsing fitness data from transposon or CRISPRi libraries. **Available on [Shinyapps.io](https://m-jahn.shinyapps.io/ShinyLib/)!**
+
+[Link to github repository with documentation](https://github.com/m-jahn/ShinyLib)
+
+ShinyLib is an app for exploration of gene-centered data from enrichment or depletion studies. Usually, a library of thousands of mutants can be grown in competition experiments, leading to the depletion of growth-inhibited mutants and enrichment of faster growing mutants. By extracting the DNA and sequencing the barcode/sgRNA of the mutant population, we can assess which genes are essential or contribute to fitness under which condition.
+
+**Features**
+
+- Displays dot plots of fold depletion/enrichment over time
+- Heatmaps and clustering of proteins/genes by fitness similarity
+- Fitness scores can be plotted as variable of one or two conditions
+- The original data table can be filtered by pathways or single genes, and selected data can be downloaded
+- Different variables can be plotted on X and Y axis, or used as conditioning variable (panel-view)
+- All charts are interactive R Shiny modules and can be adjusted by many parameters
+
+<img src="https://github.com/m-jahn/ShinyLib/raw/master/example.png" width="100%" style="display: block; margin: auto;" />
+
+### ShinyProt
+
+R Shiny based interface for monitoring bioreactors.
+ **Available on [Shinyapps.io](https://m-jahn.shinyapps.io/ShinyProt/)!**
+
+[Link to github repository with documentation](https://github.com/m-jahn/ShinyProt)
+
+ShinyProt is a small app for exploration of gene expression, proteomics, or other gene-centered biological data. 
+
+**Features**
+
+- Displays dot plots of gene expression data
+- Heatmaps, box and whisker plots, and clustering of proteins/genes by expression
+- Dendrogram of gene expression similarity
+- Sunburst treemaps (coming soon!)
+- The original data table can be filtered by pathways or single genes
+- Different variables can be plotted on X and Y axis, or used as conditioning variable (panel-view)
+- All charts are interactive R Shiny modules and can be adjusted by many parameters
+
+<img src="https://github.com/m-jahn/ShinyProt/raw/master/example.png" width="100%" style="display: block; margin: auto;" />
+
+### ShinyMC
+
+R Shiny based interface for monitoring bioreactors.
+ **Available on [Shinyapps.io](https://m-jahn.shinyapps.io/ShinyMC/)!**
+
+[Link to github repository with documentation](https://github.com/m-jahn/ShinyMC)
+
+ShinyMC is an app for monitoring bioreactor experiments. Its purpose is to keep track of ongoing cultivations in MC-1000-OD bioreactors from Photon System Intruments (PSI, CZ). Other sensors can be connected to ShinyMC as well via import of text-based measurement files.
+
+**Features**
+
+- Display of optical density (OD at 680 and 720 nm wavelength)
+- Display of growth rate calculated from OD, based on either interval growth rates or frequency of dilutions
+- Display of temperature, light intensity, and other sensor measurements such as offgas
+- All charts are interactive R Shiny modules and can be adjusted by sliders, check boxes and many other parameters
+
+<img src="https://github.com/m-jahn/ShinyMC/raw/master/example.png" width="100%" style="display: block; margin: auto;" />
 
 -----
 

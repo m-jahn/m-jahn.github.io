@@ -35,16 +35,12 @@ tm <- voronoiTreemap(
 # export tm for later plotting
 save(tm, file = "tm.Rdata")
 
-# plot with different colors
-for (theme in c("A", "B", "C", "D", "E")) {
-  filename <- paste0("header_random_", theme, ".png")
-  png(filename, width = 1776, height = 1776, res = 100)
-  drawTreemap(
-    tm, color_type = "cell_size",
-    color_palette = viridis(100, option = theme, end = 0.9),
-    border_size = 1,
-    border_color = "#150052",
-    label_level = NULL
-  )
-  dev.off()
-}
+svg("header_treemap.svg")
+drawTreemap(
+  tm, color_type = "cell_size",
+  color_palette = viridis(100, option = "D", end = 0.9),
+  border_size = 1,
+  border_color = "#150052",
+  label_level = NULL
+)
+dev.off()
