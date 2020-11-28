@@ -18,6 +18,7 @@ plugins:
 - jekyll-feed
 - jemoji
 - jekyll-remote-theme
+- jekyll-toc
 
 # Site settings
 url: 'https://m-jahn.gitub.io'

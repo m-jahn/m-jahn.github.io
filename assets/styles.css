@@ -1231,6 +1231,9 @@ body {
   padding-bottom: .4rem;
   margin-bottom: 1.6rem;
   text-align: center;
+  color: #ffffff99;
+  font-weight: bold;
+  font-size: 4em;
   background: #f9fafa;
   background-size: cover;
   background-position: center; }
