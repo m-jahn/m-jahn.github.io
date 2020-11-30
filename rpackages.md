@@ -138,7 +138,7 @@ drawTreemap(tm, title = "treemap 3",
 
 ### ShinyLib
 
-R Shiny based interface for browsing fitness data from transposon or CRISPRi libraries. **Available on [Shinyapps.io](https://m-jahn.shinyapps.io/ShinyLib/)!**
+R Shiny based web app for browsing fitness data from transposon or CRISPRi libraries. **Available on [Shinyapps.io](https://m-jahn.shinyapps.io/ShinyLib/)!**
 
 [Link to github repository with documentation](https://github.com/m-jahn/ShinyLib)
 
@@ -157,12 +157,12 @@ ShinyLib is an app for exploration of gene-centered data from enrichment or depl
 
 ### ShinyProt
 
-R Shiny based interface for monitoring bioreactors.
+R Shiny based web app for browsing proteomics data.
  **Available on [Shinyapps.io](https://m-jahn.shinyapps.io/ShinyProt/)!**
 
 [Link to github repository with documentation](https://github.com/m-jahn/ShinyProt)
 
-ShinyProt is a small app for exploration of gene expression, proteomics, or other gene-centered biological data. 
+ShinyProt is a web app for exploration of gene expression, proteomics, or other gene-centered biological data.
 
 **Features**
 
@@ -178,7 +178,7 @@ ShinyProt is a small app for exploration of gene expression, proteomics, or othe
 
 ### ShinyMC
 
-R Shiny based interface for monitoring bioreactors.
+R Shiny based web app for monitoring bioreactors.
  **Available on [Shinyapps.io](https://m-jahn.shinyapps.io/ShinyMC/)!**
 
 [Link to github repository with documentation](https://github.com/m-jahn/ShinyMC)
