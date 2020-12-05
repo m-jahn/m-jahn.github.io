@@ -6,7 +6,7 @@ feature_image: "/png/header/header_treemap_blur.png"
 feature_text: ABOUT
 ---
 
-<img src="/png/pic2_small.png" width="30%" align="right"/>
+<img src="/png/profile_2020.png" width="30%" align="right"/>
 
 My name is **Michael Jahn** and I am a postdoctoral researcher in the group of Prof. [Paul Hudson](https://www.kth.se/profile/huds/page/2-group-members). Originally from Germany, I currently live in **Stockholm**, working at the **Science for Life Laboratory** and am formally employed by **KTH, the Royal Technical University** in Sweden. 
 
