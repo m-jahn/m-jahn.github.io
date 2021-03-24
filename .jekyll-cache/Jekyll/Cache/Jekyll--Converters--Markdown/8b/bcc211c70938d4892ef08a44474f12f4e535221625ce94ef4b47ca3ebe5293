@@ -1,8 +1,0 @@
-I".<p>The famous <strong>ggplot2</strong> package for R has numerous packages extending its
-basic plot functions, including <strong>ggrepel</strong> that draws nice text labels
-for each point of a scatterplot. But I am using <strong>lattice</strong> for many
-years now, and came to like its look and customization options. However,
-one thing I was missing all the time is a simple one-line function to
-add small text labels to points in a scatter plot (a.k.a. dot plot,
-a.k.a. <code class="language-plaintext highlighter-rouge">xyplot()</code> in lattice).</p>
-:ET
