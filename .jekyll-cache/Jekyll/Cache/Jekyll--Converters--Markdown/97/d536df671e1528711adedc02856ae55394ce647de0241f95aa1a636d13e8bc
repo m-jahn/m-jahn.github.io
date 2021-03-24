@@ -1,0 +1,111 @@
+I"K#<p>This page gives an overview about ongoing (or finished) research projects. Every project contains a short description and links to bioinformatic resources and related publications.</p>
+
+<ul>
+  <li><a href="#cupriavidus-necator-resource-allocation"><em>Cupriavidus necator</em> resource allocation</a></li>
+  <li><a href="#crispri-library-in-synechocystis">CRISPRi library in <em>Synechocystis</em></a></li>
+  <li><a href="#synechocystis-resource-allocation"><em>Synechocystis</em> resource allocation</a></li>
+</ul>
+
+<h3 id="cupriavidus-necator-resource-allocation"><em>Cupriavidus necator</em> resource allocation</h3>
+
+<p><em>Ralstonia eutropha</em> a.k.a. <em>Cupriavidus necator</em> is a highly interesting bacterium for its metabolic properties. It is a model organism both for the <strong>production of bioplastics</strong> (polyhydroxy butyrate, PHB) as well as for lithoautotrophic growth. This means it has the special ability to grow solely on CO2 as carbon source and hydrogen (H2) as energy source. These properties make it highly interesting for biotech applications, where we could picture a biorefinery taking CO2 and H2 as (waste) gas streams and feeding a culture of <em>R. eutropha</em>. The cells will then turn these substrates into biomass and product (such as PHB). However, <em>R. eutropha</em> is also a cryptic organism with a very large genome (6,600 genes), poorly understood metabolism and regulation, and very few genetic tools that are available.</p>
+
+<p>In this project we want to address some of these shortcomings by analyzing growth under a variety of conditions. We will grow wild type and mutant strains with fixed growth rates (chemostat, turbidostat), gather information about gene expression using proteomics, and feed our data back into a mathematical model of the cell (see also <a href="/models">Metabolic models</a> for details). The focus of this project is to learn more about how a ‘large’ bacterium with many duplicated genes manages its gene expression resources. Bottlenecks and inefficiencies in gene expression will then be a starting point for the design of new engineered strains.</p>
+
+<p><strong>R notebooks for data analysis</strong></p>
+
+<ul>
+  <li><a href="https://m-jahn.github.io/R-notebook-ralstonia-proteome/Ralstonia_physiology.nb.html"><em>Ralstonia eutropha</em> cultivations and physiological data</a></li>
+  <li><a href="https://m-jahn.github.io/R-notebook-ralstonia-proteome/Ralstonia_proteomics.nb.html"><em>Ralstonia eutropha</em> processing of MS proteomics data</a></li>
+  <li><a href="https://m-jahn.github.io/R-notebook-ralstonia-proteome/Ralstonia_model_constraints.nb.html"><em>Ralstonia eutropha</em> model constraints</a></li>
+  <li><a href="https://m-jahn.github.io/R-notebook-ralstonia-proteome/Ralstonia_variability_analysis.nb.html"><em>Ralstonia eutropha</em> RBA model, variability analysis</a></li>
+  <li><a href="https://m-jahn.github.io/R-notebook-ralstonia-proteome/Ralstonia_enzyme_saturation.nb.html"><em>Ralstonia eutropha</em> enzyme abundance and utilization</a></li>
+  <li><a href="https://m-jahn.github.io/R-notebook-ralstonia-proteome/TnSeq-essentiality.nb.html"><em>Ralstonia eutropha</em> gene essentiality analysis (TnSeq)</a></li>
+  <li><a href="https://m-jahn.github.io/R-notebook-ralstonia-proteome/BarSeq-pulse.nb.html"><em>Ralstonia eutropha</em> condition dependent fitness (BarSeq)</a></li>
+</ul>
+
+<p><strong>Web apps to browse the data</strong></p>
+
+<ul>
+  <li><a href="https://m-jahn.shinyapps.io/ShinyProt/">ShinyProt app to browse proteomics data</a></li>
+  <li><a href="https://m-jahn.shinyapps.io/ShinyLib/">ShinyLib app to browse fitness data</a></li>
+</ul>
+
+<p><strong>BioCircos maps</strong> showing the global gene expression profile of <em>Ralstonia eutropha</em>. These maps were made using a <a href="https://github.com/m-jahn/BioCircos.R">modified Biocircos R package</a>.</p>
+
+<ul>
+  <li><a href="https://m-jahn.github.io/BioCircos.R/RE_pHG1.html">BioCircos map for Ralstonia eutropha, pHG1</a></li>
+  <li><a href="https://m-jahn.github.io/BioCircos.R/RE_chromosome_1.html">BioCircos map for Ralstonia eutropha, chromosome 1</a></li>
+  <li><a href="https://m-jahn.github.io/BioCircos.R/RE_chromosome_2.html">BioCircos map for Ralstonia eutropha, chromosome 2</a></li>
+</ul>
+
+<h3 id="crispri-library-in-synechocystis">CRISPRi library in <em>Synechocystis</em></h3>
+
+<p><strong>Published as <em>Pooled CRISPRi screening of the cyanobacterium Synechocystis sp PCC 6803 for enhanced industrial phenotypes</em> in <a href="https://www.nature.com/articles/s41467-020-15491-7">Nature Communications</a>!</strong></p>
+
+<p>The preprint is available at <a href="https://www.biorxiv.org/content/10.1101/823534v2">BioRxive</a>.</p>
+
+<p><img src="/png/projects_crispri_example.png" width="100%" align="center" /></p>
+
+<p><em>Example of depletion over time for single CRISPRi knockdown mutants</em></p>
+
+<p>We designed a CRISPRi respression library for the cyanobacterium <em>Synechocystis</em> sp. PCC6803. The library is based on the inhibitory effect of the dCas9 gene and a corresponding short guide RNA (sgRNA) that conveys specificity to the enzyme. In each cell, the dCas9 enzyme will bind a unique sequence variant of the sgRNA. The dCas9-sgRNA complex then binds a region close to the promoter of the target gene and will repress transcription by physically blocking RNA polymerase. By using a pool of thousands of different sgRNAs, transcription of all genes of a bacterial strain can be repressed, one at a time. The following <strong>R notebooks</strong> detail most of the data analysis for this publication.</p>
+
+<p><strong>Resources</strong></p>
+
+<ul>
+  <li><a href="https://m-jahn.github.io/R-notebooks/CRISPRi_library_data_processing.nb.html"><em>Synechocystis</em> CRISPRi library data processing</a></li>
+  <li><a href="https://m-jahn.github.io/R-notebooks/CRISPRi_library_enrichment_analysis.nb.html"><em>Synechocystis</em> CRISPRi library enrichment analysis</a></li>
+  <li><a href="https://m-jahn.github.io/R-notebooks/CRISPRi_library_additional_tests.nb.html"><em>Synechocystis</em> CRISPRi library additional tests</a></li>
+</ul>
+
+<h3 id="synechocystis-resource-allocation"><em>Synechocystis</em> resource allocation</h3>
+
+<p><strong>Published as <em>Growth of Cyanobacteria Is Constrained by the Abundance of Light and Carbon Assimilation Proteins</em> in <a href="http://doi.org/10.1016/j.celrep.2018.09.040">Cell Reports</a>!</strong></p>
+
+<p><img src="/png/projects_cyano_graphabstract.png" width="70%" align="center" /></p>
+
+<p><em>Cyanobacteria rearrange their proteome depending on light and CO2 availability</em></p>
+
+<p>Cyanobacteria are promising hosts for microbial biotechnology as they convert inorganic CO2 and light into biomass and products. However, low biomass productivity has prevented wider industrial application. In this project we set out to investigate growth bottlenecks using gradual and systematic <strong>limitation of the energy and carbon source (light and CO2, respectively)</strong>. We used shotgun proteomics to investigate protein allocation in the model cyanobacterium <em>Synechocystis</em> sp. PCC6803 as it adapts to limitation. We found that cells invest large amounts of resources into a small set of proteins. Of outstanding importance are proteins involved in carbon and light assimilation, as well as the translation machinery. When partitioning the proteome into a few functional sectors, we found that sector sizes changed linearly with growth rate. For example, the translation sector (ribosomes, chaperones) expands proportional to growth rate, confirming the ‘growth law’ in cyanobacteria. We fed our data into a coarse-grained <strong>cell economy model</strong> where protein costs are explicitly considered and growth rate is maximized. This demonstrated that cyanobacteria actively optimize protein resource allocation depending on environmental cues.</p>
+
+<p><strong>Resources</strong></p>
+
+<ul>
+  <li>Coarse grained cell economy models are described in <a href="/models">Metabolic models</a></li>
+  <li>Label-free proteomics pipelines for openMS/KNIME are <a href="https://github.com/m-jahn/openMS-workflows">deposited on github</a></li>
+</ul>
+
+<hr />
+
+<div class="share">
+  
+    
+      
+      
+      
+      
+
+      
+
+      <a class="button" href="https://twitter.com/intent/tweet/?url=https://m-jahn.gitub.io/projects/&amp;text=Projects" style="background: #0d94e7">Twitter&nbsp; <svg width="16" height="16" class="icon  icon--twitter" role="img" alt="twitter"><title>twitter</title><use xlink:href="#twitter" fill="CurrentColor"></use></svg>
+</a>
+
+    
+  
+    
+      
+      
+      
+      
+
+      
+
+      <a class="button" href="mailto:?subject=Projects&amp;body=Hey, check out this: https://m-jahn.gitub.io/projects/" style="background: #999999">Email&nbsp; <svg width="16" height="16" class="icon  icon--email" role="img" alt="email"><title>email</title><use xlink:href="#email" fill="CurrentColor"></use></svg>
+</a>
+
+    
+  
+</div>
+
+:ET

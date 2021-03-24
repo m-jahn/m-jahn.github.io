@@ -1,0 +1,257 @@
+I"�}<p>My github activity is in free fall, my email response time is at least
+two days, and my stress level is lower than usual. What has happened, am
+I on vacation? Not quite, I’m in the middle of a five month parental
+leave with my almost one year old daughter Sophie. So far it’s been a
+joyful but also challenging time. Here are some thoughts about my own
+parental leave, about the conditions here in Sweden, and a comparison
+with other European countries.</p>
+
+<hr />
+
+<h3 id="latte-pappa">Latte pappa?!</h3>
+
+<p>How did I end up with <strong>5 month of parental leave</strong>? That might sound
+like an awful lot, and even more so in countries where institutional
+support for paternal leave is generally low. In Sweden, equal
+opportunities (and duties) for all genders is strongly encouraged, there
+is no specific maternal or paternal leave. The fact that dads can be
+spotted everywhere roaming the playground with their phone in one hand
+and a <em>latte</em> in the other (is that a word, latte?) gave rise to the
+friendly neologism ‘latte pappa’. Personally, I chose to take five
+months leave because it was in good agreement with my wife’s job
+situation and I wanted to spend as much time with the baby as possible.
+If this is above or below the Swedish average I actually didn’t know.
+But read on to find out.</p>
+
+<p><strong>How does it work in Sweden formally?</strong> Both parents can <strong>share up to
+480 days of paid leave.</strong> Of those 480 days, 390 are ‘fully’ paid based
+on your pervious income (actually not fully but around 80%). The
+remaining 90 days are a basic flat rate of 180 SEK per day (~18 €). You
+can apply for support and <strong>manage your account of days on line</strong>. Not a
+single sheet of paper required. Very convenient.</p>
+
+<p><strong>For comparison, parental leave in Germany</strong> is paid for up to 14
+months (420 days) that parents can share, at around 60 % of your
+previous income. A parent has to take at least two month to get the
+benefit. I often hear from friends that the kid’s mother takes tvelve
+months and the father just two, the bare minimum. We’ll have a look at
+the actual statistics below. Application for parental leave is paper
+based, requires you to hand in proof of your monthly income, and a
+personal visit in the city hall is likely. Not so convenient.</p>
+
+<h3 id="parental-leave-in-sweden-and-the-eu">Parental leave in Sweden and the EU</h3>
+
+<p>I wondered how many mums and dads actually take parental leave in the
+EU, and if the situation is different between member states. We can use
+the fantastic ´eurostats´ R package to see if there is central data
+available. There is!</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># attach packages</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">eurostat</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">lattice</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">latticeExtra</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">latticetools</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">SysbioTreemaps</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<hr />
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># search and download data from eurostats</span><span class="w">
+</span><span class="n">search_eurostat</span><span class="p">(</span><span class="s2">"parental leave"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## # A tibble: 1 x 8
+##   title code  type  `last update of… `last table str… `data start` `data end`
+##   &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;            &lt;chr&gt;            &lt;chr&gt;        &lt;chr&gt;     
+## 1 Pers… lfso… data… 16.02.2019       27.02.2020       2010         2010      
+## # … with 1 more variable: values &lt;chr&gt;
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">get_eurostat</span><span class="p">(</span><span class="s2">"lfso_10lparlea"</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"label"</span><span class="p">,</span><span class="w"> </span><span class="n">stringsAsFactors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+</span><span class="n">head</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## # A tibble: 6 x 8
+##   unit    sex    age     duration  isced97          geo        time       values
+##   &lt;chr&gt;   &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;      &lt;date&gt;      &lt;dbl&gt;
+## 1 Thousa… Femal… From 1… Zero mon… Pre-primary, pr… European … 2010-01-01   411.
+## 2 Thousa… Femal… From 1… Zero mon… Upper secondary… European … 2010-01-01   356.
+## 3 Thousa… Femal… From 1… Zero mon… First and secon… European … 2010-01-01    NA 
+## 4 Thousa… Femal… From 1… Zero mon… No response      European … 2010-01-01    NA 
+## 5 Thousa… Femal… From 1… Zero mon… All ISCED 1997 … European … 2010-01-01   817 
+## 6 Thousa… Femal… From 1… From 3 t… Pre-primary, pr… European … 2010-01-01    NA
+</code></pre></div></div>
+
+<p>First I would like to take a lot at parental leave in Sweden, broken
+down by gender, age, and education. We will sum up all people that did
+parental leave regardless of the duration and look at the proportion of
+men and women. We need to reshape the data a bit by excluding summary
+values such as ‘all age grous’ or ‘all education levels’. We also
+exclude ‘zero months’ duration because that means no parental leave was
+taken, while we should include the ‘no response’ group ( where it’s not
+clear how long people were absent from work).</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filter data for Sweden only, and remove summary values</span><span class="w">
+</span><span class="n">df_swe</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">filter</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="w">
+  </span><span class="n">age</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s2">"From 15 to 64 years"</span><span class="p">,</span><span class="w">
+  </span><span class="n">geo</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"Sweden"</span><span class="p">,</span><span class="w">
+  </span><span class="n">sex</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s2">"Total"</span><span class="p">,</span><span class="w">
+  </span><span class="n">isced97</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s2">"All ISCED 1997 levels"</span><span class="p">,</span><span class="w">
+  </span><span class="n">duration</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s2">"Zero months"</span><span class="p">,</span><span class="w">
+  </span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">values</span><span class="p">)</span><span class="w">
+</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># abbreviate lengthy description</span><span class="w">
+</span><span class="n">df_swe</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">mutate</span><span class="p">(</span><span class="n">df_swe</span><span class="p">,</span><span class="w">
+  </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gsub</span><span class="p">(</span><span class="s2">"From | years"</span><span class="p">,</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">),</span><span class="w">
+  </span><span class="n">education</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"tertiary"</span><span class="p">,</span><span class="w"> </span><span class="s2">"no response"</span><span class="p">,</span><span class="w"> 
+    </span><span class="s2">"primary"</span><span class="p">,</span><span class="w"> </span><span class="s2">"secondary"</span><span class="p">)[</span><span class="n">factor</span><span class="p">(</span><span class="n">isced97</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">as.numeric</span><span class="p">]</span><span class="w">
+</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>For the fun of it we can plot the data in a treemap representation. It’s
+not ideal for every type of data but here it works fairly well. We plot
+it using my
+<a href="https://github.com/m-jahn/SysbioTreemaps"><strong>SysbioTreemaps</strong></a> R package
+that can plot nested Voronoi and Sunburst treemaps from a <code class="language-plaintext highlighter-rouge">data.frame</code>.
+Both representations tell the same story, that men and women take
+equally often parental leave, although we do not know how long.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># generate treemaps</span><span class="w">
+</span><span class="c1"># ---------------------------------</span><span class="w">
+</span><span class="c1"># parental leave as Voronoi treemap</span><span class="w">
+</span><span class="n">tm</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">voronoiTreemap</span><span class="p">(</span><span class="w">
+  </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">df_swe</span><span class="p">,</span><span class="w">
+  </span><span class="n">levels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"sex"</span><span class="p">,</span><span class="w"> </span><span class="s2">"age"</span><span class="p">,</span><span class="w"> </span><span class="s2">"education"</span><span class="p">),</span><span class="w">
+  </span><span class="n">cell_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"values"</span><span class="p">,</span><span class="w">
+  </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"circle"</span><span class="p">,</span><span class="w">
+  </span><span class="n">error_tol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.001</span><span class="p">,</span><span class="w">
+  </span><span class="n">maxIteration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">200</span><span class="p">,</span><span class="w">
+  </span><span class="n">positioning</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"regular"</span><span class="w">
+</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Level 1 tesselation:  0.25 % mean error,  0.25 % max error,  200 iterations
+## Level 2 tesselation:  0.07 % mean error,  0.1 % max error,  177 iterations
+## Level 3 tesselation:  0.06 % mean error,  0.09 % max error,  65 iterations
+## Level 3 tesselation:  0.06 % mean error,  0.1 % max error,  87 iterations
+## Level 3 tesselation:  0.07 % mean error,  0.1 % max error,  177 iterations
+## Level 2 tesselation:  0.06 % mean error,  0.1 % max error,  164 iterations
+## Level 3 tesselation:  0.05 % mean error,  0.09 % max error,  51 iterations
+## Level 3 tesselation:  0.07 % mean error,  0.1 % max error,  100 iterations
+## Level 3 tesselation:  0.06 % mean error,  0.1 % max error,  124 iterations
+## Treemap successfully created
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># parental leave as Sunburst treemap</span><span class="w">
+</span><span class="n">tm2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">sunburstTreemap</span><span class="p">(</span><span class="w">
+  </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">df_swe</span><span class="p">,</span><span class="w">
+  </span><span class="n">levels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"sex"</span><span class="p">,</span><span class="w"> </span><span class="s2">"age"</span><span class="p">,</span><span class="w"> </span><span class="s2">"education"</span><span class="p">),</span><span class="w">
+  </span><span class="n">cell_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"values"</span><span class="w">
+</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Treemap successfully created
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># draw generated treemaps</span><span class="w">
+</span><span class="c1"># ---------------------------------</span><span class="w">
+</span><span class="n">drawTreemap</span><span class="p">(</span><span class="w">
+  </span><span class="n">tm</span><span class="p">,</span><span class="w">
+  </span><span class="n">label_level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">,</span><span class="w"> 
+  </span><span class="n">label_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1.5</span><span class="p">,</span><span class="w">
+  </span><span class="n">label_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">grey</span><span class="p">(</span><span class="m">0.95</span><span class="p">),</span><span class="w"> </span><span class="n">grey</span><span class="p">(</span><span class="m">0.8</span><span class="p">),</span><span class="w"> </span><span class="n">grey</span><span class="p">(</span><span class="m">0.5</span><span class="p">)),</span><span class="w">
+  </span><span class="n">border_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">8</span><span class="p">,</span><span class="w">
+  </span><span class="n">legend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w">
+  </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Number of parents taking leave for first kid, Eurostat 2010"</span><span class="p">,</span><span class="w">
+  </span><span class="n">layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">),</span><span class="w">
+  </span><span class="n">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w">
+</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Warning in drawTreemap(tm, label_level = 1:3, label_size = 1.5, label_color =
+## c(grey(0.95), : Use 'add = TRUE' if you want to add more treemaps to this page.
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">drawTreemap</span><span class="p">(</span><span class="w">
+  </span><span class="n">tm2</span><span class="p">,</span><span class="w">
+  </span><span class="n">label_level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> 
+  </span><span class="n">label_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">grey</span><span class="p">(</span><span class="m">0.8</span><span class="p">),</span><span class="w">
+  </span><span class="n">border_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w">
+  </span><span class="n">legend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w">
+  </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Number of parents taking leave for first kid, Eurostat 2010"</span><span class="p">,</span><span class="w">
+  </span><span class="n">layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">),</span><span class="w">
+  </span><span class="n">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">),</span><span class="w"> 
+  </span><span class="n">add</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="w">
+</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="/png/2019-11-09-parental-leave_files/figure-gfm/unnamed-chunk-4-1.png" alt="" /><!-- --></p>
+
+<hr />
+
+<p>This data set is a good example for rich annotation because it contains
+several variables of metadata that we can use to interrogate it. <strong>We
+can plot parental leave broken down by country, age, gender, duration</strong>,
+and so on. Or everything at once (that would be messy). I initially
+wondered about mums and dads taking different duration of parental
+leave, and assumed that <strong>the gender gap might be smaller in Sweden than
+in other EU contries</strong>. Now it’s time to find out.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filter for all EU countries and summary </span><span class="w">
+</span><span class="c1"># values for age and education</span><span class="w">
+</span><span class="n">df_mod</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">filter</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="w">
+  </span><span class="n">age</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"From 15 to 64 years"</span><span class="p">,</span><span class="w">
+  </span><span class="o">!</span><span class="n">grepl</span><span class="p">(</span><span class="s2">"Euro"</span><span class="p">,</span><span class="w"> </span><span class="n">geo</span><span class="p">),</span><span class="w">
+  </span><span class="n">sex</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s2">"Total"</span><span class="p">,</span><span class="w">
+  </span><span class="n">isced97</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"All ISCED 1997 levels"</span><span class="p">,</span><span class="w">
+  </span><span class="o">!</span><span class="n">duration</span><span class="w"> </span><span class="o">%in%</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"No response"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Ongoing"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Not applicable"</span><span class="p">)</span><span class="w">
+</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># change order of factor duration</span><span class="w">
+</span><span class="n">df_mod</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">mutate</span><span class="p">(</span><span class="n">df_mod</span><span class="p">,</span><span class="w">
+  </span><span class="n">duration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">factor</span><span class="p">(</span><span class="n">duration</span><span class="p">,</span><span class="w"> </span><span class="n">unique</span><span class="p">(</span><span class="n">duration</span><span class="p">)[</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">4</span><span class="p">,</span><span class="m">5</span><span class="p">)])</span><span class="w">
+</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># turn absolute number of parents to relative</span><span class="w">
+</span><span class="n">df_mod</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">mutate</span><span class="p">(</span><span class="n">df_mod</span><span class="p">,</span><span class="w"> </span><span class="n">geo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gsub</span><span class="p">(</span><span class="s2">" .until.*"</span><span class="p">,</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"> </span><span class="n">geo</span><span class="p">))</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">group_by</span><span class="p">(</span><span class="n">geo</span><span class="p">,</span><span class="w"> </span><span class="n">sex</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">mutate</span><span class="p">(</span><span class="n">rel_frequency</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">100</span><span class="o">*</span><span class="n">values</span><span class="o">/</span><span class="nf">sum</span><span class="p">(</span><span class="n">values</span><span class="p">,</span><span class="w"> </span><span class="n">na.rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">))</span><span class="w">
+
+</span><span class="c1"># parental leave </span><span class="w">
+</span><span class="n">xyplot</span><span class="p">(</span><span class="n">rel_frequency</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="n">factor</span><span class="p">(</span><span class="n">duration</span><span class="p">)</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">geo</span><span class="p">,</span><span class="w"> 
+  </span><span class="n">df_mod</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"orange"</span><span class="p">,</span><span class="w"> </span><span class="s2">"#65CCF5"</span><span class="p">),</span><span class="w">
+  </span><span class="n">groups</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sex</span><span class="p">,</span><span class="w"> </span><span class="n">as.table</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w">
+  </span><span class="n">between</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.4</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.4</span><span class="p">),</span><span class="w">
+  </span><span class="n">par.settings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">custom.lattice</span><span class="p">(),</span><span class="w">
+  </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"duration of parental leave"</span><span class="p">,</span><span class="w">
+  </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"relative frequency of parents"</span><span class="p">,</span><span class="w">
+  </span><span class="n">scales</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">alternating</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">rot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">35</span><span class="p">)),</span><span class="w">
+  </span><span class="n">panel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">panel.grid</span><span class="p">(</span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">-1</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">-1</span><span class="p">,</span><span class="w"> </span><span class="n">col.line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">grey</span><span class="p">(</span><span class="m">0.9</span><span class="p">))</span><span class="w">
+    </span><span class="n">panel.barchart</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">horizontal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">origin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">stack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> 
+      </span><span class="n">border</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NA</span><span class="p">,</span><span class="w"> </span><span class="n">box.width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.8</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p">)</span><span class="w">
+    </span><span class="n">panel.key</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s2">"female"</span><span class="p">,</span><span class="w"> </span><span class="s2">"male"</span><span class="p">),</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"orange"</span><span class="p">,</span><span class="w"> </span><span class="s2">"#65CCF5"</span><span class="p">),</span><span class="w"> </span><span class="n">pch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">15</span><span class="p">,</span><span class="w"> 
+      </span><span class="n">corner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0.9</span><span class="p">,</span><span class="w"> </span><span class="m">0.9</span><span class="p">))</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="/png/2019-11-09-parental-leave_files/figure-gfm/unnamed-chunk-5-1.png" alt="" /><!-- --></p>
+
+<p>Well, the result is… disappointing. The blue bars are dads taking
+parental leave broken down by EU member state, and <strong>the overwhelming
+majority of men take no parental leave at all</strong>. Sweden and Finland seem
+to be the top countries regarding paternal leave. But even in Sweden,
+most men don’t take parental leave and the number of dads that do drops
+with increasing duration.</p>
+
+<p>The surprising finding is that even <strong>many mothers don’t take any
+maternal leave</strong>. Bulgaria, Cyprus, Denmark, Greece, Iceland, who takes
+care of your babies during the first year? If you know the answer please
+leave a comment. What is very well possible is that the data presented
+here is outdated (2010) or that some groups are not accurately
+annotated, e.g. if a member state doesn’t collect or report data on
+duration of parental leave to Eurstat.</p>
+:ET

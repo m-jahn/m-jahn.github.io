@@ -1,0 +1,223 @@
+I"4`<ul>
+  <li><a href="#lattice-tools">lattice-tools</a></li>
+  <li><a href="#sysbiotreemaps">SysbioTreemaps</a></li>
+  <li><a href="#shinylib">ShinyLib</a></li>
+  <li><a href="#shinyprot">ShinyProt</a></li>
+  <li><a href="#shinymc">ShinyMC</a></li>
+</ul>
+
+<h3 id="lattice-tools">lattice-tools</h3>
+
+<p><a href="https://github.com/m-jahn/lattice-tools">Link to github repository with documentation</a></p>
+
+<p>This package contains panel functions and wrapper functions for the <strong>R lattice package</strong>, a general purpose plotting package from Deepayan Sarkar. Lattice’s functionality is comparable to the popular ggplot2 package but has a slightly different look and feel. The functions collected here were added over time and might not always adhere perfectly to the lattice conventions. However some care was taken to replicate the original lattice behavior so that users can use grouping and paneling as they are used to. Feel free to copy, fork or source functions that you find useful. Contributions welcome!</p>
+
+<p><strong>Installation</strong></p>
+
+<p>To install the package directly from github, use this function from
+<code class="language-plaintext highlighter-rouge">devtools</code> package in your R session:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">require</span><span class="p">(</span><span class="n">devtools</span><span class="p">)</span><span class="w">
+    </span><span class="n">devtools</span><span class="o">::</span><span class="n">install_github</span><span class="p">(</span><span class="s2">"https://github.com/m-jahn/lattice-tools"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Examples</strong></p>
+
+<p><strong><em>panel.barplot</em></strong></p>
+
+<p>Draw barplot with error bars in lattice plots. This custom panel function for lattice plots allows to draw barplots with error bars for
+arbitrary groups of data points. Error bars will be drawn for groups of identical x values with optional subsetting by grouping or paneling
+variables.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">latticetools</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">lattice</span><span class="p">)</span><span class="w">
+</span><span class="n">data</span><span class="p">(</span><span class="n">mtcars</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># we can use a grouping variable similar to other lattice panel functions</span><span class="w">
+</span><span class="n">xyplot</span><span class="p">(</span><span class="n">mpg</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="n">factor</span><span class="p">(</span><span class="n">cyl</span><span class="p">),</span><span class="w"> </span><span class="n">mtcars</span><span class="p">,</span><span class="w"> 
+  </span><span class="n">groups</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cyl</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w">
+  </span><span class="n">panel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">panel.barplot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p">)</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="https://github.com/m-jahn/lattice-tools/raw/master/vignettes/README_files/figure-gfm/unnamed-chunk-4-2.png" align="center" width="80%" /></p>
+
+<p><strong><em>panel.directlabel</em></strong></p>
+
+<p>Point labels for scatterplots. Draw text labels for all points of a scatterplot using functions from directlabels. In contrast to the
+functionality of the original <code class="language-plaintext highlighter-rouge">directlabels</code> package, <em>every point</em> is labelled instead of groups. Labels are also independent from the
+grouping variable, so that e.g. colors indicate a grouping variable and labels another. By default, labels adapt the graphical parameters of the higher level plot, including coloring according to groups. However, many parameters can be customized.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">lattice</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">directlabels</span><span class="p">)</span><span class="w">
+
+</span><span class="n">data</span><span class="p">(</span><span class="s2">"mtcars"</span><span class="p">)</span><span class="w">
+</span><span class="n">mtcars</span><span class="o">$</span><span class="n">car</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">rownames</span><span class="p">(</span><span class="n">mtcars</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># A standard example using lattice grouping and paneling;</span><span class="w">
+</span><span class="c1"># We can also draw boxes around labels and change label size</span><span class="w">
+</span><span class="n">xyplot</span><span class="p">(</span><span class="n">mpg</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="n">wt</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">factor</span><span class="p">(</span><span class="n">cyl</span><span class="p">),</span><span class="w"> </span><span class="n">mtcars</span><span class="p">,</span><span class="w">
+  </span><span class="n">groups</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cyl</span><span class="p">,</span><span class="w"> </span><span class="n">pch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">19</span><span class="p">,</span><span class="w"> </span><span class="n">labels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mtcars</span><span class="o">$</span><span class="n">car</span><span class="p">,</span><span class="w">
+  </span><span class="n">as.table</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">),</span><span class="w"> </span><span class="n">cex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.6</span><span class="p">,</span><span class="w">
+  </span><span class="n">panel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">panel.xyplot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p">)</span><span class="w">
+    </span><span class="n">panel.directlabel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">draw_box</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">box_line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p">)</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="https://github.com/m-jahn/lattice-tools/raw/master/vignettes/README_files/figure-gfm/unnamed-chunk-6-1.png" align="center" width="80%" /></p>
+
+<h3 id="sysbiotreemaps">SysbioTreemaps</h3>
+
+<p><a href="https://github.com/m-jahn/SysbioTreemaps">Link to github repository with documentation</a></p>
+
+<p>Generate and plot <strong>Voronoi treemaps</strong> or <strong>Sunburst treemaps</strong> from hierarchical data. Treemaps are a visually appealing graphical representation of numerical data using a space-filling approach. A plane or ‘map’ is subdivided into smaller areas called cells. The cells in the map are scaled according to an underlying metric which allows to grasp the hierarchical organization and relative importance of many objects at once. This package contains two different implementations of treemaps, Voronoi treemaps and Sunburst treemaps.</p>
+
+<p><strong>Installation</strong></p>
+
+<p>The C++ code computing the actual Voronoi tesselation requires the <a href="https://www.cgal.org/download.html">CGAL</a> headers. This requirement is now satisfied with the R package <a href="https://cran.r-project.org/web/packages/cgal4h/index.html">cgal4h</a> so that local installation of CGAL is no longer required.</p>
+
+<p>To install the package directly from github, use this function from the <code class="language-plaintext highlighter-rouge">devtools</code> package in your R session:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">require</span><span class="p">(</span><span class="n">devtools</span><span class="p">)</span><span class="w">
+</span><span class="n">devtools</span><span class="o">::</span><span class="n">install_github</span><span class="p">(</span><span class="s2">"https://github.com/m-jahn/SysbioTreemaps"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Examples</strong></p>
+
+<p>The functions to create Voronoi (or Sunburst) treemaps take a <code class="language-plaintext highlighter-rouge">data.frame</code> as main input. The <code class="language-plaintext highlighter-rouge">data.frame</code> should contain column(s)
+with numerical or categorical data (i.e. a character vector).</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">SysbioTreemaps</span><span class="p">)</span><span class="w">
+
+</span><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="w">
+  </span><span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">rep</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s2">"a"</span><span class="p">,</span><span class="w"> </span><span class="s2">"b"</span><span class="p">,</span><span class="w"> </span><span class="s2">"c"</span><span class="p">),</span><span class="w"> </span><span class="n">each</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">15</span><span class="p">),</span><span class="w">
+  </span><span class="n">B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sample</span><span class="p">(</span><span class="nb">letters</span><span class="p">[</span><span class="m">4</span><span class="o">:</span><span class="m">12</span><span class="p">],</span><span class="w"> </span><span class="m">45</span><span class="p">,</span><span class="w"> </span><span class="n">replace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">),</span><span class="w">
+  </span><span class="n">C</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sample</span><span class="p">(</span><span class="m">10</span><span class="o">:</span><span class="m">100</span><span class="p">,</span><span class="w"> </span><span class="m">45</span><span class="p">)</span><span class="w">
+</span><span class="p">)</span><span class="w">
+
+</span><span class="n">tm</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">voronoiTreemap</span><span class="p">(</span><span class="w">
+  </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">df</span><span class="p">,</span><span class="w">
+  </span><span class="n">levels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"A"</span><span class="p">,</span><span class="w"> </span><span class="s2">"B"</span><span class="p">,</span><span class="w"> </span><span class="s2">"C"</span><span class="p">),</span><span class="w">
+  </span><span class="n">cell_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"C"</span><span class="p">,</span><span class="w">
+  </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"rounded_rect"</span><span class="w">
+</span><span class="p">)</span><span class="w">
+
+</span><span class="n">drawTreemap</span><span class="p">(</span><span class="n">tm</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"treemap 1"</span><span class="p">,</span><span class="w"> 
+  </span><span class="n">color_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"categorical"</span><span class="p">,</span><span class="w"> </span><span class="n">color_level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> 
+  </span><span class="n">layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">3</span><span class="p">),</span><span class="w"> </span><span class="n">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">))</span><span class="w">
+
+</span><span class="n">drawTreemap</span><span class="p">(</span><span class="n">tm</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"treemap 2"</span><span class="p">,</span><span class="w">
+  </span><span class="n">color_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"categorical"</span><span class="p">,</span><span class="w"> </span><span class="n">color_level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">border_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w">
+  </span><span class="n">add</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">3</span><span class="p">),</span><span class="w"> </span><span class="n">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">))</span><span class="w">
+
+</span><span class="n">drawTreemap</span><span class="p">(</span><span class="n">tm</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"treemap 3"</span><span class="p">,</span><span class="w">
+  </span><span class="n">color_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"cell_size"</span><span class="p">,</span><span class="w"> </span><span class="n">color_level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w">
+  </span><span class="n">color_palette</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">heat.colors</span><span class="p">(</span><span class="m">10</span><span class="p">),</span><span class="w">
+  </span><span class="n">border_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">grey</span><span class="p">(</span><span class="m">0.4</span><span class="p">),</span><span class="w"> </span><span class="n">label_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">grey</span><span class="p">(</span><span class="m">0.4</span><span class="p">),</span><span class="w">
+  </span><span class="n">add</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">3</span><span class="p">),</span><span class="w"> </span><span class="n">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">),</span><span class="w">
+  </span><span class="n">title_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"black"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="https://github.com/m-jahn/SysbioTreemaps/raw/master/vignettes/png/unnamed-chunk-7-1.png" width="100%" style="display: block; margin: auto;" /></p>
+
+<h3 id="shinylib">ShinyLib</h3>
+
+<p>R Shiny based web app for browsing fitness data from transposon or CRISPRi libraries. <strong>Available on <a href="https://m-jahn.shinyapps.io/ShinyLib/">Shinyapps.io</a>!</strong></p>
+
+<p><a href="https://github.com/m-jahn/ShinyLib">Link to github repository with documentation</a></p>
+
+<p>ShinyLib is an app for exploration of gene-centered data from enrichment or depletion studies. Usually, a library of thousands of mutants can be grown in competition experiments, leading to the depletion of growth-inhibited mutants and enrichment of faster growing mutants. By extracting the DNA and sequencing the barcode/sgRNA of the mutant population, we can assess which genes are essential or contribute to fitness under which condition.</p>
+
+<p><strong>Features</strong></p>
+
+<ul>
+  <li>Displays dot plots of fold depletion/enrichment over time</li>
+  <li>Heatmaps and clustering of proteins/genes by fitness similarity</li>
+  <li>Fitness scores can be plotted as variable of one or two conditions</li>
+  <li>The original data table can be filtered by pathways or single genes, and selected data can be downloaded</li>
+  <li>Different variables can be plotted on X and Y axis, or used as conditioning variable (panel-view)</li>
+  <li>All charts are interactive R Shiny modules and can be adjusted by many parameters</li>
+</ul>
+
+<p><img src="https://github.com/m-jahn/ShinyLib/raw/master/example.png" width="100%" style="display: block; margin: auto;" /></p>
+
+<h3 id="shinyprot">ShinyProt</h3>
+
+<p>R Shiny based web app for browsing proteomics data.
+ <strong>Available on <a href="https://m-jahn.shinyapps.io/ShinyProt/">Shinyapps.io</a>!</strong></p>
+
+<p><a href="https://github.com/m-jahn/ShinyProt">Link to github repository with documentation</a></p>
+
+<p>ShinyProt is a web app for exploration of gene expression, proteomics, or other gene-centered biological data.</p>
+
+<p><strong>Features</strong></p>
+
+<ul>
+  <li>Displays dot plots of gene expression data</li>
+  <li>Heatmaps, box and whisker plots, and clustering of proteins/genes by expression</li>
+  <li>Dendrogram of gene expression similarity</li>
+  <li>Sunburst treemaps (coming soon!)</li>
+  <li>The original data table can be filtered by pathways or single genes</li>
+  <li>Different variables can be plotted on X and Y axis, or used as conditioning variable (panel-view)</li>
+  <li>All charts are interactive R Shiny modules and can be adjusted by many parameters</li>
+</ul>
+
+<p><img src="https://github.com/m-jahn/ShinyProt/raw/master/example.png" width="100%" style="display: block; margin: auto;" /></p>
+
+<h3 id="shinymc">ShinyMC</h3>
+
+<p>R Shiny based web app for monitoring bioreactors.
+ <strong>Available on <a href="https://m-jahn.shinyapps.io/ShinyMC/">Shinyapps.io</a>!</strong></p>
+
+<p><a href="https://github.com/m-jahn/ShinyMC">Link to github repository with documentation</a></p>
+
+<p>ShinyMC is an app for monitoring bioreactor experiments. Its purpose is to keep track of ongoing cultivations in MC-1000-OD bioreactors from Photon System Intruments (PSI, CZ). Other sensors can be connected to ShinyMC as well via import of text-based measurement files.</p>
+
+<p><strong>Features</strong></p>
+
+<ul>
+  <li>Display of optical density (OD at 680 and 720 nm wavelength)</li>
+  <li>Display of growth rate calculated from OD, based on either interval growth rates or frequency of dilutions</li>
+  <li>Display of temperature, light intensity, and other sensor measurements such as offgas</li>
+  <li>All charts are interactive R Shiny modules and can be adjusted by sliders, check boxes and many other parameters</li>
+</ul>
+
+<p><img src="https://github.com/m-jahn/ShinyMC/raw/master/example.png" width="100%" style="display: block; margin: auto;" /></p>
+
+<hr />
+
+<div class="share">
+  
+    
+      
+      
+      
+      
+
+      
+
+      <a class="button" href="https://twitter.com/intent/tweet/?url=https://m-jahn.gitub.io/rpackages/&amp;text=R%20packages" style="background: #0d94e7">Twitter&nbsp; <svg width="16" height="16" class="icon  icon--twitter" role="img" alt="twitter"><title>twitter</title><use xlink:href="#twitter" fill="CurrentColor"></use></svg>
+</a>
+
+    
+  
+    
+      
+      
+      
+      
+
+      
+
+      <a class="button" href="mailto:?subject=R packages&amp;body=Hey, check out this: https://m-jahn.gitub.io/rpackages/" style="background: #999999">Email&nbsp; <svg width="16" height="16" class="icon  icon--email" role="img" alt="email"><title>email</title><use xlink:href="#email" fill="CurrentColor"></use></svg>
+</a>
+
+    
+  
+</div>
+:ET

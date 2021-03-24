@@ -1,0 +1,36 @@
+I"�<ul>
+  <li><a href="#cupriavidus-necator-resource-allocation-model"><em>Cupriavidus necator</em> resource allocation model</a></li>
+  <li><a href="#cupriavidus-necator-genome-scale-model"><em>Cupriavidus necator</em> genome scale model</a></li>
+  <li><a href="#synechocystis-resource-allocation-model"><em>Synechocystis</em> resource allocation model</a></li>
+</ul>
+
+<h3 id="cupriavidus-necator-resource-allocation-model"><em>Cupriavidus necator</em> resource allocation model</h3>
+
+<p><a href="https://github.com/m-jahn/Bacterial-RBA-models">Link to github repository with documentation</a></p>
+
+<p><img src="https://github.com/m-jahn/Bacterial-RBA-models/raw/master/Ralstonia-eutropha-H16/figures/RBA_model_generation.png" width="100%" align="center" /></p>
+
+<p>This <em>resource balance analysis</em> (RBA) model was generated using the <code class="language-plaintext highlighter-rouge">RBApy</code> package from <a href="https://doi.org/10.1016/j.ymben.2019.06.001">Bulovic et al. (2019)</a>, using a genome scale metabolic model (GSM) originally developed by <a href="http://bmcsystbiol.biomedcentral.com/articles/10.1186/1752-0509-5-101">Park et al., 2011</a>. The original genome scale model was refactored and many reactions were curated and harmonized to community standards as e.g. available through the Bigg model database. The genome scale model that serves as base for the RBA model is described below.</p>
+
+<p>The RBA model is an extension of a standard GSM where the solution space is constrained by many additional parameters. The topology of the metabolic network and its gene and reaction annotations are taken from the GSM. In a next step, enzymes and cellular ‘machineries’ are built based on data retrieved from uniprot. The model simulates all cellular processes from DNA replication, to transcription, translation and protein folding. The protein pool is limited so that the optimization of gene expression towards a specific objective (e.g. growth) becomes dependent on environmental parameters but also rate limitations. Catalytic efficiency of enzymes links enzyme abundance to maximal rate so that flux through the metabolic netowrk can not become infinitely high.</p>
+
+<h3 id="cupriavidus-necator-genome-scale-model"><em>Cupriavidus necator</em> genome scale model</h3>
+
+<p><a href="https://github.com/m-jahn/genome-scale-models">Link to github repository with documentation</a></p>
+
+<p><img src="https://github.com/m-jahn/genome-scale-models/raw/master/map.png" width="100%" align="center" /></p>
+
+<p>Genome scale metabolic model for <em>Ralstonia eutropha</em> a.k.a. <em>Cupriavidus necator</em> H16. The model was previously published in <a href="http://bmcsystbiol.biomedcentral.com/articles/10.1186/1752-0509-5-101">Park et al., 2011</a>. However the original model contained many errors or missing annotations and was therefore extensively manually curated. The full list of changes to the original model is documented on the models github repo. The original model, for example, showed flux through artificial energy generating cycles (see Fritzemeier et al., PLOS Comp Bio, 2017). After identification and removal of the following issues, no activity of such cycles was found anymore using FBA.</p>
+
+<h3 id="synechocystis-resource-allocation-model"><em>Synechocystis</em> resource allocation model</h3>
+
+<p><a href="https://github.com/m-jahn/cell-economy-models">Link to github repository with documentation</a></p>
+
+<p><img src="/png/models_syn_cell_eco.png" width="80%" align="center" /></p>
+
+<p>Simplified <em>cellular economy model</em> for the simulation of fundamental processes in photo-autotrophic bacteria. The purpose of this models is not to reflect cellular behavior in its entire complexity, but rather to reduce complexity to an amount that still allows drawing significant conclusions while keeping the number of components and reactions as small as possible. The cellular economy model bundles fundamental processes in ‘super-enzymes’, single catalytic units that serve as proxies for similar pathways. Such coarse-grain models are useful to illustrate metabolic tradeoffs under different conditions without getting lost in details. The models are mixed-integer non-linear optimization (MINLP) problems, based on previous work by <a href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2795476&amp;tool=pmcentrez&amp;rendertype=abstract">Molenaar et al. (2009)</a> and <a href="http://journal.frontiersin.org/article/10.3389/fbioe.2015.00001/abstract">R. Burnap (2015)</a>.</p>
+
+<hr />
+
+<p>{% include nav-share.html %}</p>
+:ET

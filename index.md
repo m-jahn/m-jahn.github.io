@@ -2,7 +2,7 @@
 title: Michael Jahn, PhD
 layout: page
 feature_image: "/png/header/header_treemap_blur.png"
-feature_text: HOME
+feature_text: 
 ---
 
 Hi! I'm Michael and I'm working as a postdoctoral researcher in the group of Prof. [Paul Hudson](https://www.kth.se/profile/huds/page/2-group-members) at **KTH, the Royal Technical University** in Stockholm, Sweden. Our group works at the **Science for Life Laboratory**, a joint institute of four different universities of the Stockhom area. I work on different projects evolving around **microbial systems biology**, mainly with photo-autotrophic cells such as **cyanobacteria** as the model organism. This website presents some of the projects and resources of my scientific work.
@@ -16,6 +16,10 @@ Hi! I'm Michael and I'm working as a postdoctoral researcher in the group of Pro
 - [Blog](blog)
 
 ### News
+
+#### 2021-03-24 | New preprint for *Cupriavidus* project
+
+Our new paper about **protein utilization in the versatile lithoautotroph *Cupriavidus necator*** (aka *Ralstonia eutropha*) was [just deposited on BioRxiv.org](https://www.biorxiv.org/content/10.1101/2021.03.21.436304v1). Integrating data from proteomics, resource allocation modeling, and a transposon mutant library, we found some really interesting things. For example, of the three chromosomes that *C neactor* owns, one encodes 80% of the protein mass (the housekeeping chromosome). The other chromosomes encode specialized functions like CO2 fixation genes and were probably acquired later in evolution. The expression of these genes conflicts with overlapping functions of the ancestral chromosome.
 
 #### 2020-09-04 | Talk at cyano conference, Porto
 

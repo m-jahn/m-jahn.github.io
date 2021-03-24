@@ -3,7 +3,7 @@ layout: page
 title: "Curriculum vitae"
 permalink: /CV/
 feature_image: "/png/header/header_treemap_blur.png"
-feature_text: CV
+feature_text: 
 ---
 
 ### Current position

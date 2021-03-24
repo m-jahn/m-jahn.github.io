@@ -1,0 +1,63 @@
+I"H<p>Hi! I’m Michael and I’m working as a postdoctoral researcher in the group of Prof. <a href="https://www.kth.se/profile/huds/page/2-group-members">Paul Hudson</a> at <strong>KTH, the Royal Technical University</strong> in Stockholm, Sweden. Our group works at the <strong>Science for Life Laboratory</strong>, a joint institute of four different universities of the Stockhom area. I work on different projects evolving around <strong>microbial systems biology</strong>, mainly with photo-autotrophic cells such as <strong>cyanobacteria</strong> as the model organism. This website presents some of the projects and resources of my scientific work.</p>
+
+<h3 id="quick-links">Quick links</h3>
+
+<ul>
+  <li><a href="about">About this page</a></li>
+  <li><a href="projects">Scientific projects</a></li>
+  <li><a href="publications">Publications</a></li>
+  <li><a href="CV">Curriculum vitae</a></li>
+  <li><a href="blog">Blog</a></li>
+</ul>
+
+<h3 id="news">News</h3>
+
+<h4 id="2021-03-24--new-preprint-for-cupriavidus-project">2021-03-24 | New preprint for <em>Cupriavidus</em> project</h4>
+
+<p>Our new paper about <strong>protein utilization in the versatile lithoautotroph <em>Cupriavidus necator</em></strong> (aka <em>Ralstonia eutropha</em>) was <a href="https://www.biorxiv.org/content/10.1101/2021.03.21.436304v1">just deposited on BioRxiv.org</a>. Integrating data from proteomics, resource allocation modeling, and a transposon mutant library, we found some really interesting things. For example, of the three chromosomes that <em>C neactor</em> owns, one encodes 80% of the protein mass (the housekeeping chromosome). The other chromosomes encode specialized functions like CO2 fixation genes and were probably acquired later in evolution. The expression of these genes conflicts with overlapping functions of the ancestral chromosome.</p>
+
+<h4 id="2020-09-04--talk-at-cyano-conference-porto">2020-09-04 | Talk at cyano conference, Porto</h4>
+
+<p>In a few days starts the <strong>11th European workshop on the biology of cyanobacteria</strong>. It was planned to take place in beautiful Porto, Portugal. I was very much looking forward to this as I haven’t been on a conference for a whole year. But unfortunately COVID-19 forced the conference organizers to turn it into a digital meeting. This is not as exciting as visiting a real conference (and a new city!) and meeting people in person, but I’m nevertheless looking forward to it. I will present my work on the <a href="projects">cell economy of cyanobacteria</a>. I recorded my talk (15 min) and uploaded it so you can <a href="blog">watch it here</a>.</p>
+
+<h4 id="2020-04-03--crispri-library-paper-published">2020-04-03 | CRISPRi library paper published</h4>
+
+<p>Finally, after 4 years of work with dozens of cultivations and millions of sequenced reads, our paper about a <strong>CRISPRi library in the model cyanobacterium <em>Synechocystis</em> was <a href="https://www.nature.com/articles/s41467-020-15491-7">published in Nature Communications</a></strong>. What is this story about? Cyanobacteria are promising hosts for biotech production of (fine) chemicals. They are particularly interesting because they can grow solely on CO2 and sunlight. However, the productivities are low, the implemented pathways often instable, and the adaptation to varying amounts of light or CO2 not fully understood. Our group created a ‘library’ (a mixed pool) of thousands of mutants, each one equipped qith a CRISPR based gene repression system repressing one gene at a time. By cultivating this pool of mutants under low light, high light, and  a lactate production condition, better adapted mutants were enriched over time, and worse adapted mutants depleted. By these means we were able to find a handful of genes improving growth, acid tolerance, or lactate productivity.</p>
+
+<h4 id="2019-11-08--awarded-formas-grant">2019-11-08 | Awarded FORMAS grant</h4>
+
+<p>The Swedish funding agency FORMAS has awarded me with a grant to continue ongoing work with the fascinating litho-autotrophic bacterium <em>Ralstonia eutropha</em> a.k.a. <em>Cupriavidus necator</em>. As usual in our lab, we will study this bug and its metabolic capabilities from the systems biology perspective. Many exciting things are planned but the <strong>focus of the project is on resource allocation</strong>: What does a versatile soil bacterium spends its carbon and energy for? Which routes will different substrates take through the cellular metabolism? Under which conditions are enzymes saturated (under-abundance), or are not used at all (over-abundance)? We will try to answer these questions using highly controlled <strong>steady state cultivation</strong>, <strong>proteomics</strong>, <strong>metabolic modeling</strong>, and not yet determined <strong>genetic engineering</strong>. The project will officially start May 2020 and run for two years.</p>
+
+<hr />
+
+<div class="share">
+  
+    
+      
+      
+      
+      
+
+      
+
+      <a class="button" href="https://twitter.com/intent/tweet/?url=https://m-jahn.gitub.io/&amp;text=Michael%20Jahn,%20PhD" style="background: #0d94e7">Twitter&nbsp; <svg width="16" height="16" class="icon  icon--twitter" role="img" alt="twitter"><title>twitter</title><use xlink:href="#twitter" fill="CurrentColor"></use></svg>
+</a>
+
+    
+  
+    
+      
+      
+      
+      
+
+      
+
+      <a class="button" href="mailto:?subject=Michael Jahn, PhD&amp;body=Hey, check out this: https://m-jahn.gitub.io/" style="background: #999999">Email&nbsp; <svg width="16" height="16" class="icon  icon--email" role="img" alt="email"><title>email</title><use xlink:href="#email" fill="CurrentColor"></use></svg>
+</a>
+
+    
+  
+</div>
+
+:ET

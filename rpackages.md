@@ -3,7 +3,7 @@ layout: page
 title: "R packages"
 permalink: /rpackages/
 feature_image: "/png/header/header_treemap_blur.png"
-feature_text: R PACKAGES
+feature_text: 
 ---
 
 - [lattice-tools](#lattice-tools)

@@ -3,7 +3,7 @@ layout: page
 title: "Publications"
 permalink: /publications/
 feature_image: "/png/header/header_treemap_blur.png"
-feature_text: PUBLICATIONS
+feature_text: 
 ---
 
 Yao L, Shabestary K, Björk SM, Asplund-Samuelsson J, Joensson HN, **Jahn M**, Hudson EP.

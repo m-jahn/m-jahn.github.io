@@ -1,0 +1,21 @@
+I" <p><img src="/png/profile_2020.png" width="30%" align="right" /></p>
+
+<p>My name is <strong>Michael Jahn</strong> and I am a postdoctoral researcher in the group of Prof. <a href="https://www.kth.se/profile/huds/page/2-group-members">Paul Hudson</a>. Originally from Germany, I currently live in <strong>Stockholm</strong>, working at the <strong>Science for Life Laboratory</strong> and am formally employed by <strong>KTH, the Royal Technical University</strong> in Sweden.</p>
+
+<p>My primary field of interest is microbial biotechnology, in the widest sense. I like to work at the interphase of experimental and computational biology. I am an enthusiastic user of R statistical programming, but also use python for metabolic modeling. I’m advocating for openness and transparency in science. When I’m not working I’m trying to raise my two kids, and travel around Sweden, Europe and elsewhere.</p>
+
+<h3 id="contact">Contact</h3>
+
+<p>Get in touch with me via:</p>
+
+<ul>
+  <li><a href="https://www.researchgate.net/profile/Michael_Jahn">Research gate</a></li>
+  <li><a href="https://github.com/m-jahn/">github</a></li>
+  <li><a href="https://twitter.com/mich_jahn">Twitter</a></li>
+  <li><a href="https://www.kth.se/profile/mjahn">KTH home page</a></li>
+</ul>
+
+<hr />
+
+<p>{% include nav-share.html %}</p>
+:ET

@@ -3,7 +3,7 @@ layout: page
 title: "About me"
 permalink: /about/
 feature_image: "/png/header/header_treemap_blur.png"
-feature_text: ABOUT
+feature_text: 
 ---
 
 <img src="/png/profile_2020.png" width="30%" align="right"/>
