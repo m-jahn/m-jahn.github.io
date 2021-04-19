@@ -6,6 +6,12 @@ feature_image: "/png/header/header_treemap_blur.png"
 feature_text: 
 ---
 
+**Jahn M**, Crang N, Janasch M, Hober A, Forsström B, Kimler K, Mattausch A, Chen Q, Asplund-Samuelsson J, Hudson EP. *Protein allocation and utilization in the versatile chemolithoautotroph Cupriavidus necator*, BioRxiv.org, **2021**. *In revision*.
+[DOI: 10.1101/2021.03.21.436304](https://doi.org/10.1101/2021.03.21.436304)
+
+Karlsen J, Asplund-Samuelsson J, **Jahn M**, Vitay D, Hudson EP. *Slow Protein Turnover Explains Limited Protein-Level Response to Diurnal Transcriptional Oscillations in Cyanobacteria*. Frontiers in Microbiology, 12, 820, **2021**.
+[DOI: 10.3389/fmicb.2021.657379](http://doi.org/10.3389/fmicb.2021.657379)
+
 Yao L, Shabestary K, Björk SM, Asplund-Samuelsson J, Joensson HN, **Jahn M**, Hudson EP.
 *Pooled CRISPRi screening of the cyanobacterium Synechocystis sp PCC 6803 for enhanced industrial phenotypes*.
 Nature Communications. **2020**-12. 

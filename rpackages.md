@@ -8,6 +8,7 @@ feature_text:
 
 - [lattice-tools](#lattice-tools)
 - [SysbioTreemaps](#sysbiotreemaps)
+- [ShinyTreemaps](#shinytreemaps)
 - [ShinyLib](#shinylib)
 - [ShinyProt](#shinyprot)
 - [ShinyMC](#shinymc)
@@ -135,6 +136,23 @@ drawTreemap(tm, title = "treemap 3",
 ```
 
 <img src="https://github.com/m-jahn/SysbioTreemaps/raw/master/vignettes/png/unnamed-chunk-7-1.png" width="100%" style="display: block; margin: auto;" />
+
+### ShinyTreemaps
+
+R Shiny based web app to generate **Voronoi treemaps and sunburst treemaps**. **Available on [Shinyapps.io](https://m-jahn.shinyapps.io/ShinyTreemaps/)!**
+
+[Link to github repository with documentation](https://github.com/m-jahn/ShinyTreemaps)
+
+ShinyTreemaps is a wrapper for the SysbioTreemaps R package. Users can upload their own data in `csv` format, egnerate treemaps, and stylize them with different default layout and color schemes.
+
+**Features**
+
+- upload your own tables
+- generate Voronoi treemaps
+- customize visual appearance
+- download in high resolution `png` or as `svg` vector graphic
+
+<img src="https://raw.githubusercontent.com/m-jahn/ShinyTreemaps/main/example.png" width="100%" style="display: block; margin: auto;" />
 
 ### ShinyLib
 
