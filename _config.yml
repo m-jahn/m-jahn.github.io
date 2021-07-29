@@ -56,8 +56,16 @@ navigation_footer:
   url: "#top"
 - title: Home
   url: /
-- title: About
-  url: /about/
+- title: Projects
+  url: /projects/
+- title: R packages
+  url: /rpackages/
+- title: Metabolic models
+  url: /models/
+- title: Publications
+  url: /publications/
+- title: CV
+  url: /CV/
 - title: Blog
   url: /blog/
 

@@ -2,8 +2,8 @@
 layout: page
 title: "Publications"
 permalink: /publications/
-feature_image: "/png/header/header_treemap_blur.png"
-feature_text: 
+feature_image: "/png/header/header_treemap_bw_blur.png"
+feature_text: PUBLICATIONS
 ---
 
 **Jahn M**, Crang N, Janasch M, Hober A, Forsström B, Kimler K, Mattausch A, Chen Q, Asplund-Samuelsson J, Hudson EP. *Protein allocation and utilization in the versatile chemolithoautotroph Cupriavidus necator*, BioRxiv.org, **2021**. *In revision*.

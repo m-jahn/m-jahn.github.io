@@ -2,8 +2,8 @@
 layout: page
 title: "Metabolic models"
 permalink: /models/
-feature_image: "/png/header/header_treemap_blur.png"
-feature_text: 
+feature_image: "/png/header/header_treemap_bw_blur.png"
+feature_text: METABOLIC MODELS
 ---
 
 - [*Cupriavidus necator* resource allocation model](#cupriavidus-necator-resource-allocation-model)

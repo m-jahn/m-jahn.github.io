@@ -2,8 +2,8 @@
 layout: page
 title: "Curriculum vitae"
 permalink: /CV/
-feature_image: "/png/header/header_treemap_blur.png"
-feature_text: 
+feature_image: "/png/header/header_treemap_bw_blur.png"
+feature_text: CURRICULUM VITAE
 ---
 
 ### Current position
