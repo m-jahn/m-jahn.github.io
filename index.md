@@ -2,18 +2,31 @@
 title: Michael Jahn, PhD
 layout: page
 feature_image: "/png/header/header_treemap_blur.png"
-feature_text: 
+feature_text: HOME
 ---
 
-Hi! I'm Michael and I'm working as a postdoctoral researcher in the group of Prof. [Paul Hudson](https://www.kth.se/profile/huds/page/2-group-members) at **KTH, the Royal Technical University** in Stockholm, Sweden. Our group works at the **Science for Life Laboratory**, a joint institute of four different universities of the Stockhom area. I work on different projects evolving around **microbial systems biology**, mainly with photo-autotrophic cells such as **cyanobacteria** as the model organism. This website presents some of the projects and resources of my scientific work.
+<img src="/png/profile_2020.png" width="30%" align="right"/>
+
+I'm a postdoctoral researcher in the group of Prof. [Paul Hudson](https://www.kth.se/profile/huds/page/2-group-members) at **KTH**, the **Royal Institute of Technology** in Stockholm, Sweden. Our group works at the **Science for Life Laboratory**, a joint institute of four different universities of the Stockholm area. I work on different projects evolving around **microbial systems biology**, mainly with photo- and lithoautotrophic model organisms, such as cyanobacteria or the 'Knallgas bacterium' *Cupriavidus necator*. 
+
+My primary field of interest is microbial biotechnology, in the widest sense. I like to work at the interphase of experimental and computational biology. I am an enthusiastic user of R and python for statistics, metabolic modeling, and data visualization. I'm also advocating for openness and transparency in the life science. This website bundles information and resources of my scientific projects.
 
 ### Quick links
 
-- [About this page](about)
 - [Scientific projects](projects)
 - [Publications](publications)
 - [Curriculum vitae](CV)
 - [Blog](blog)
+
+### Social media + platforms
+
+- [Google Scholar](https://scholar.google.co.uk/citations?user=jApo8PEAAAAJ)
+- [Orcid](https://orcid.org/0000-0002-3913-153X)
+- [github](https://github.com/m-jahn/)
+- [Twitter](https://twitter.com/mich_jahn)
+- [KTH home page](https://www.kth.se/profile/mjahn)
+- [Research gate](https://www.researchgate.net/profile/Michael_Jahn)
+
 
 ### News
 

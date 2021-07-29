@@ -37,8 +37,6 @@ paginate_path: blog/page:num
 navigation_header:
 - title: Home
   url: /
-- title: About
-  url: /about/
 - title: Projects
   url: /projects/
 - title: R packages
