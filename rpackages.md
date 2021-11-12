@@ -6,12 +6,39 @@ feature_image: "/png/header/header_treemap_bw_blur.png"
 feature_text: R PACKAGES AND APPS
 ---
 
+- [fluctuator](#fluctuator)
 - [lattice-tools](#lattice-tools)
 - [SysbioTreemaps](#sysbiotreemaps)
 - [ShinyTreemaps](#shinytreemaps)
 - [ShinyLib](#shinylib)
 - [ShinyProt](#shinyprot)
 - [ShinyMC](#shinymc)
+
+
+### fluctuator
+
+[Link to github repository with documentation](https://github.com/m-jahn/fluctuator)
+
+A package to draw metabolic flux maps with R. SVG is the primary choice for scalable, open-source graphic files. This packages provides a simple interface to import SVG graphic files in R, modify these in a programmatic way, and export the files again. The purpose of this package is to overlay scientific data on medium or large scale network representations, which is too laborious and time-consuming to do manually. SVG Graphics have to be drawn beforehand, for example using Inkscape. Objects (“nodes”) are than identified and modified using unique IDs/label in R.
+
+**Installation**
+
+To install the package directly from github, use this function from
+`devtools` package in your R session:
+
+``` r
+require(devtools)
+install_github("https://github.com/m-jahn/fluctuator")
+```
+
+**Example**
+
+See the package README for usage details. The package can be used to automatically overlay metabolic fluxes from e.g. FBA on metabolic flux maps.
+
+|                Original SVG                 |            SVG with overlaid fluxes             |
+|:-------------------------------------------:|:-----------------------------------------------:|
+| ![](https://github.com/m-jahn/fluctuator/raw/main/inst/extdata/central_metabolism.png) | ![](https://github.com/m-jahn/fluctuator/raw/main/inst/extdata/central_metabolism_mod.png) |
+
 
 ### lattice-tools
 
@@ -26,7 +53,7 @@ To install the package directly from github, use this function from
 
 ``` r
 require(devtools)
-    devtools::install_github("https://github.com/m-jahn/lattice-tools")
+install_github("https://github.com/m-jahn/lattice-tools")
 ```
 
 **Examples**
@@ -51,7 +78,7 @@ xyplot(mpg ~ factor(cyl), mtcars,
 )
 ```
 
-<img src="https://github.com/m-jahn/lattice-tools/raw/master/vignettes/README_files/figure-gfm/unnamed-chunk-4-2.png" align="center" width="80%"/>
+<img src="https://github.com/m-jahn/lattice-tools/raw/master/vignettes/README_files/figure-gfm/unnamed-chunk-5-2.png" align="center" width="50%"/>
 
 ***panel.directlabel***
 
@@ -79,7 +106,7 @@ xyplot(mpg ~ wt | factor(cyl), mtcars,
 )
 ```
 
-<img src="https://github.com/m-jahn/lattice-tools/raw/master/vignettes/README_files/figure-gfm/unnamed-chunk-6-1.png" align="center" width="80%" />
+<img src="https://github.com/m-jahn/lattice-tools/raw/master/vignettes/README_files/figure-gfm/unnamed-chunk-7-1.png" align="center" width="75%" />
 
 ### SysbioTreemaps
 
@@ -95,7 +122,7 @@ To install the package directly from github, use this function from the `devtool
 
 ``` r
 require(devtools)
-devtools::install_github("https://github.com/m-jahn/SysbioTreemaps")
+install_github("https://github.com/m-jahn/SysbioTreemaps")
 ```
 
 **Examples**

@@ -14,7 +14,13 @@ This page gives an overview about ongoing (or finished) research projects. Every
 
 ### *Cupriavidus necator* resource allocation
 
+**Published as *Protein allocation and utilization in the versatile chemolithoautotroph Cupriavidus necator* in [eLife](https://elifesciences.org/articles/69019)!**
+
 The preprint is available at [BioRxiv.org](https://www.biorxiv.org/content/10.1101/2021.03.21.436304v1).
+
+<img src="/png/projects_cnecator_proteconomy.png" width="100%" align="center"/>
+
+*Study overview (A) and protein abundance mapped to the three chromosomes (B)*
 
 *Ralstonia eutropha* a.k.a. *Cupriavidus necator* is a highly interesting bacterium for its metabolic properties. It is a model organism both for the **production of bioplastics** (polyhydroxy butyrate, PHB) as well as for lithoautotrophic growth. This means it has the special ability to grow solely on CO2 as carbon source and hydrogen (H2) as energy source. These properties make it highly interesting for biotech applications, where we could picture a biorefinery taking CO2 and H2 as (waste) gas streams and feeding a culture of *R. eutropha*. The cells will then turn these substrates into biomass and product (such as PHB). However, *R. eutropha* is also a cryptic organism with a very large genome (6,600 genes), poorly understood metabolism and regulation, and very few genetic tools that are available. 
 

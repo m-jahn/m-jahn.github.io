@@ -30,9 +30,13 @@ My primary field of interest is microbial biotechnology, in the widest sense. I 
 
 ### News
 
+#### 2021-11-11 | Finally published in eLife
+
+Our new paper, *"Protein allocation and utilization in the versatile chemolithoautotroph Cupriavidus necator"*, [was finally published in eLife!](https://elifesciences.org/articles/69019). It was a long journey, taking almost two and a half years to submission and another six months of review and improvements to finally publish it. We combined several layers of genome-wide screens: MS proteomics, gene essentiality from a transposon mutant library, and [resource balance analysis](https://sysbioinra.github.io/RBApy/) modeling. Combining these layers allowed us to show that *C. necator* is a bacterium in the making. It has several conflicting layers of regulation to tune gene expression of its highly versatile but complicated carbon and energy metabolism. Our results show for example that cells "waste" protein resources for autotrophic lifestyle even when no hydrogen is available.
+
 #### 2021-03-24 | New preprint for *Cupriavidus* project
 
-Our new paper about **protein utilization in the versatile lithoautotroph *Cupriavidus necator*** (aka *Ralstonia eutropha*) was [just deposited on BioRxiv.org](https://www.biorxiv.org/content/10.1101/2021.03.21.436304v1). Integrating data from proteomics, resource allocation modeling, and a transposon mutant library, we found some really interesting things. For example, of the three chromosomes that *C neactor* owns, one encodes 80% of the protein mass (the housekeeping chromosome). The other chromosomes encode specialized functions like CO2 fixation genes and were probably acquired later in evolution. The expression of these genes conflicts with overlapping functions of the ancestral chromosome.
+Our new paper about **protein utilization in the versatile lithoautotroph *Cupriavidus necator*** (aka *Ralstonia eutropha*) was [just deposited on BioRxiv.org](https://www.biorxiv.org/content/10.1101/2021.03.21.436304v1). Integrating data from proteomics, resource allocation modeling, and a transposon mutant library, we found some really interesting things. For example, of the three chromosomes that *C. necator* owns, one encodes 80% of the protein mass (the housekeeping chromosome). The other chromosomes encode specialized functions like CO2 fixation genes and were probably acquired later in evolution. The expression of these genes conflicts with overlapping functions of the ancestral chromosome.
 
 #### 2020-09-04 | Talk at cyano conference, Porto
 

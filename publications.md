@@ -6,8 +6,8 @@ feature_image: "/png/header/header_treemap_bw_blur.png"
 feature_text: PUBLICATIONS
 ---
 
-**Jahn M**, Crang N, Janasch M, Hober A, Forsström B, Kimler K, Mattausch A, Chen Q, Asplund-Samuelsson J, Hudson EP. *Protein allocation and utilization in the versatile chemolithoautotroph Cupriavidus necator*, BioRxiv.org, **2021**. *In revision*.
-[DOI: 10.1101/2021.03.21.436304](https://doi.org/10.1101/2021.03.21.436304)
+**Jahn M**, Crang N, Janasch M, Hober A, Forsström B, Kimler K, Mattausch A, Chen Q, Asplund-Samuelsson J, Hudson EP. *Protein allocation and utilization in the versatile chemolithoautotroph Cupriavidus necator*, eLife, **2021**.
+[DOI: 10.7554/elife.69019](https://doi.org/10.7554/elife.69019)
 
 Karlsen J, Asplund-Samuelsson J, **Jahn M**, Vitay D, Hudson EP. *Slow Protein Turnover Explains Limited Protein-Level Response to Diurnal Transcriptional Oscillations in Cyanobacteria*. Frontiers in Microbiology, 12, 820, **2021**.
 [DOI: 10.3389/fmicb.2021.657379](http://doi.org/10.3389/fmicb.2021.657379)
