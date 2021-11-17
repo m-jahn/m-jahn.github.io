@@ -5,7 +5,7 @@ feature_image: "/png/header/header_treemap_bw_blur.png"
 feature_text: HOME
 ---
 
-<img src="/png/profile_2020.png" width="25%" align="right"/>
+<img src="/png/profile_2020_circle.png" width="25%" align="right"/>
 
 I'm a postdoctoral researcher in the group of Prof. [Paul Hudson](https://www.kth.se/profile/huds/page/2-group-members) at **KTH**, the **Royal Institute of Technology** in Stockholm, Sweden. Our group works at the **Science for Life Laboratory**, a joint institute of four different universities of the Stockholm area. I work on different projects evolving around **microbial systems biology**, mainly with photo- and lithoautotrophic model organisms, such as cyanobacteria or the 'Knallgas bacterium' *Cupriavidus necator*. 
 
