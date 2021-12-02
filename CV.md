@@ -45,7 +45,7 @@ Awarded funding: 2020-01-01-2021-12-31: 2 000 000 SEK
 - [KTH home page](https://www.kth.se/profile/mjahn)
 - [Research gate](https://www.researchgate.net/profile/Michael_Jahn)
 
-## Peer review
+### Peer review
 
 I'm an active reviewer for many microbiology and biotechnology journals. Check my [Publons](https://publons.com/researcher/1192906/michael-jahn/) account for latest stats.
 
