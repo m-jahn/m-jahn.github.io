@@ -3,7 +3,7 @@ layout: page
 title: "Curriculum vitae"
 permalink: /CV/
 feature_image: "/png/header/header_treemap_bw_blur.png"
-feature_text: CURRICULUM VITAE
+feature_text: "CURRICULUM VITAE"
 ---
 
 ### Current position
@@ -38,24 +38,21 @@ Awarded funding: 2020-01-01-2021-12-31: 2 000 000 SEK
 
 ### Social media and platforms
 
-- [Google Scholar](https://scholar.google.co.uk/citations?user=jApo8PEAAAAJ)
-- [Orcid](https://orcid.org/0000-0002-3913-153X)
-- [github](https://github.com/m-jahn/)
+- [ORCID](https://orcid.org/0000-0002-3913-153X)
+- [Research gate](https://www.researchgate.net/profile/Michael_Jahn)
+- [github](https:// github.com/m-jahn/)
 - [Twitter](https://twitter.com/mich_jahn)
 - [KTH home page](https://www.kth.se/profile/mjahn)
-- [Research gate](https://www.researchgate.net/profile/Michael_Jahn)
 
-### Peer review
+## Peer review
 
-I'm an active reviewer for many microbiology and biotechnology journals. Check my [Publons](https://publons.com/researcher/1192906/michael-jahn/) account for latest stats.
+I'm active in peer review (list as of Nov 2020). Check my [Publons](https://publons.com/review/author/AzKdBNNk/) account for latest stats.
 
-- reviews for Microbial Cell Factories: 9
-- reviews for Cytometry: 2
-- reviews for Molecular Systems Biology: 1
 - reviews for Photosynthesis Research: 1
 - reviews for Frontiers in Microbiology: 1
-- reviews for Frontiers in Biotechnology: 1
 - reviews for Analyst: 1
+- reviews for Cytometry: 2
+- reviews for Microbial Cell Factories: 5
 
 -----
 
