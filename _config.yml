@@ -45,8 +45,8 @@ navigation_header:
   url: /models/
 - title: Publications
   url: /publications/
-- title: CV
-  url: /CV/
+- title: Biography
+  url: /biography/
 - title: Blog
   url: /blog/
 
@@ -64,8 +64,8 @@ navigation_footer:
   url: /models/
 - title: Publications
   url: /publications/
-- title: CV
-  url: /CV/
+- title: Biography
+  url: /biography/
 - title: Blog
   url: /blog/
 

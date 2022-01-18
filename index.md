@@ -15,7 +15,7 @@ My primary field of interest is microbial biotechnology, in the widest sense. I 
 
 - [Scientific projects](projects)
 - [Publications](publications)
-- [Curriculum vitae](CV)
+- [Biography](biography)
 - [Blog](blog)
 
 ### Social media + platforms

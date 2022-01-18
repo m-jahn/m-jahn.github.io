@@ -1,16 +1,18 @@
 ---
 layout: page
-title: "Curriculum vitae"
-permalink: /CV/
+title: "Biography"
+permalink: /biography/
 feature_image: "/png/header/header_treemap_bw_blur.png"
-feature_text: "CURRICULUM VITAE"
+feature_text: "BIOGRAPHY"
 ---
 
 ### Current position
 
-- **2016 until now** - Postdoctoral researcher at Scilifelab (KTH), Stockholm, SE
+- **2016 until now** - **Postdoctoral researcher at Science for Life Lab** (KTH), Stockholm, Sweden
 
-### Education and Work  
+<!---
+
+### Education and Work
 
 - **July 2015** - **Graduated Doctor rerum naturalium**, at the University of Leipzig, Germany, with summa cum laude (1.0)
 - **2011-2015** - **PhD studies**, Group of Flow Cytometry (Prof. Susann Müller), Dept. Environmental Microbiology, **Helmholtz-Centre for Environmental Research, Leipzig**, Thesis: ’Characterization of population heterogeneity in a
@@ -30,9 +32,9 @@ model biotechnological process using *Pseudomonas putida*’
 
 ### Awarded grants
 
-- **Investigation of protein resource allocation in the model CO2 fixing bacterium Ralstonia eutropha** (Swedish: Undersökning av proteiners resursfördelning i en modell för CO2-fixerande bakterier, Ralstonia eutropha). 
-Funding agency: FORMAS. 
-Project number: 2019-01491. 
+- **Investigation of protein resource allocation in the model CO2 fixing bacterium Ralstonia eutropha** (Swedish: Undersökning av proteiners resursfördelning i en modell för CO2-fixerande bakterier, Ralstonia eutropha).
+Funding agency: FORMAS.
+Project number: 2019-01491.
 Project leader: Michael Jahn.
 Awarded funding: 2020-01-01-2021-12-31: 2 000 000 SEK
 
@@ -53,6 +55,7 @@ I'm active in peer review (list as of Nov 2020). Check my [Publons](https://publ
 - reviews for Analyst: 1
 - reviews for Cytometry: 2
 - reviews for Microbial Cell Factories: 5
+--->
 
 -----
 
