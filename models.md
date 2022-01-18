@@ -36,6 +36,8 @@ Genome scale metabolic model for *Ralstonia eutropha* a.k.a. *Cupriavidus necato
 
 Simplified *cellular economy model* for the simulation of fundamental processes in photo-autotrophic bacteria. The purpose of this models is not to reflect cellular behavior in its entire complexity, but rather to reduce complexity to an amount that still allows drawing significant conclusions while keeping the number of components and reactions as small as possible. The cellular economy model bundles fundamental processes in 'super-enzymes', single catalytic units that serve as proxies for similar pathways. Such coarse-grain models are useful to illustrate metabolic tradeoffs under different conditions without getting lost in details. The models are mixed-integer non-linear optimization (MINLP) problems, based on previous work by [Molenaar et al. (2009)](http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2795476&tool=pmcentrez&rendertype=abstract) and [R. Burnap (2015)](http://journal.frontiersin.org/article/10.3389/fbioe.2015.00001/abstract).
 
+Last updated: 2022-01-18
+
 -----
 
 {% include nav-share.html %}  

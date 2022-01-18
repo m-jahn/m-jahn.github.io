@@ -239,6 +239,8 @@ ShinyMC is an app for monitoring bioreactor experiments. Its purpose is to keep 
 
 <img src="https://github.com/m-jahn/ShinyMC/raw/master/example.png" width="100%" style="display: block; margin: auto;" />
 
+Last updated: 2022-01-18
+
 -----
 
 {% include nav-share.html %}
