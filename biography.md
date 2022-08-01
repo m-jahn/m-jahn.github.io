@@ -8,14 +8,15 @@ feature_text: BIOGRAPHY
 
 ### Current position
 
-- **2016 until now** - **Postdoctoral researcher at Science for Life Lab** (KTH), Stockholm, Sweden
+- **from 2022** - Bioinformatics researcher at Max-Planck-Unit for the Science of Pathogens, Berlin
 
 ### Education and Work
 
+- **2016-2022** - **Postdoctoral researcher at Science for Life Lab** (KTH), Stockholm, Sweden. Group of microbial metabolic engineering (Prof Paul Hudson).
 - **July 2015** - **Graduated Doctor rerum naturalium**, at the University of Leipzig, Germany, with summa cum laude (1.0)
-- **2011-2015** - **PhD studies**, Group of Flow Cytometry (Prof. Susann Müller), Dept. Environmental Microbiology, **Helmholtz-Centre for Environmental Research, Leipzig**, Thesis: ’Characterization of population heterogeneity in a
+- **2011-2015** - **PhD studies**, Group of Flow Cytometry (Prof Susann Müller), Dept. Environmental Microbiology, **Helmholtz-Centre for Environmental Research, Leipzig**, Thesis: ’Characterization of population heterogeneity in a
 model biotechnological process using *Pseudomonas putida*’
-- **2005-2011** - **Undergraduate studies in biology**, **Dresden University of Technology (TUD)**, Diploma thesis: ’Dynamic mating pheromone gradients for induction of mating projection and fluorescence in yeast’, group of Prof. Gerhard Rödel.
+- **2005-2011** - **Undergraduate studies in biology**, **Dresden University of Technology (TUD)**, Diploma thesis: ’Dynamic mating pheromone gradients for induction of mating projection and fluorescence in yeast’, group of Prof Gerhard Rödel.
 
 ### Conference presentations (talks)
 
@@ -42,8 +43,8 @@ Awarded funding: 2020-01-01-2021-12-31: 2 000 000 SEK
 - [Orcid](https://orcid.org/0000-0002-3913-153X)
 - [github](https://github.com/m-jahn/)
 - [Twitter](https://twitter.com/mich_jahn)
-- [KTH home page](https://www.kth.se/profile/mjahn)
 - [Research gate](https://www.researchgate.net/profile/Michael_Jahn)
+- [KTH home page](https://www.kth.se/profile/mjahn)
 
 ## Peer review
 
@@ -57,7 +58,7 @@ I'm an active reviewer for many microbiology and biotechnology journals. Check m
 - reviews for Frontiers in Biotechnology: 1
 - reviews for Analyst: 1
 
-Last updated: 2022-01-18
+Last updated: 2022-08-01
 
 -----
 

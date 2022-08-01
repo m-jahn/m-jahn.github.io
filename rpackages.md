@@ -8,7 +8,7 @@ feature_text: R PACKAGES AND APPS
 
 - [fluctuator](#fluctuator)
 - [lattice-tools](#lattice-tools)
-- [SysbioTreemaps](#sysbiotreemaps)
+- [WeightedTreemaps](#weightedtreemaps)
 - [ShinyTreemaps](#shinytreemaps)
 - [ShinyLib](#shinylib)
 - [ShinyProt](#shinyprot)
@@ -108,9 +108,9 @@ xyplot(mpg ~ wt | factor(cyl), mtcars,
 
 <img src="https://github.com/m-jahn/lattice-tools/raw/master/vignettes/README_files/figure-gfm/unnamed-chunk-7-1.png" align="center" width="75%" />
 
-### SysbioTreemaps
+### WeightedTreemaps
 
-[Link to github repository with documentation](https://github.com/m-jahn/SysbioTreemaps)
+[Link to github repository with documentation](https://github.com/m-jahn/WeightedTreemaps)
 
 Generate and plot **Voronoi treemaps** or **Sunburst treemaps** from hierarchical data. Treemaps are a visually appealing graphical representation of numerical data using a space-filling approach. A plane or ‘map’ is subdivided into smaller areas called cells. The cells in the map are scaled according to an underlying metric which allows to grasp the hierarchical organization and relative importance of many objects at once. This package contains two different implementations of treemaps, Voronoi treemaps and Sunburst treemaps.
 

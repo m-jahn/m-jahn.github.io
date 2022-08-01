@@ -48,3 +48,14 @@ bundle install
 # test page and follow the proposed link
 bundle exec jekyll serve
 ```
+
+## Issues
+
+When running the command above results in an error message similar to that:
+`cannot load such file -- webrick (LoadError)'
+
+The solution is to add the webrick library by running this command in the terminal:
+
+```
+bundle add webrick
+```

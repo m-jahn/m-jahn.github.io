@@ -13,12 +13,12 @@ This page gives an overview about ongoing (or finished) research projects. Every
 - [CRISPRi library in *Synechocystis*](#crispri-library-in-synechocystis)
 - [*Synechocystis* resource allocation](#synechocystis-resource-allocation)
 
-### *Cupriavidus necator* energy metabolism
+### *Cupriavidus necator* energy metabolism  (2021-2022)
 
 In this ongoing study, I am investigating the energy metabolism of the chemolithoautotroph *Cupriavidus necator*. This is a continuation of the [*Cupriavidus necator* resource allocation](#cupriavidus-necator-resource-allocation) project, where, among other things, a barcoded transposon knockout library was created. In this project, we exploit the library to study the growth on different carbon and energy substrates including formate and hydrogen gas which utilize *Cupriavidus*' remarkable ability to fix CO2 using energy from small and volatile chemicals.
 
 
-### *Cupriavidus necator* resource allocation
+### *Cupriavidus necator* resource allocation  (2019-2022)
 
 **Published as *Protein allocation and utilization in the versatile chemolithoautotroph Cupriavidus necator* in [eLife](https://elifesciences.org/articles/69019)!**
 
@@ -54,7 +54,7 @@ In this project we want to address some of these shortcomings by analyzing growt
 - [BioCircos map for Ralstonia eutropha, chromosome 2](https://m-jahn.github.io/BioCircos.R/RE_chromosome_2.html)
 
 
-### CRISPRi library in *Synechocystis*
+### CRISPRi library in *Synechocystis* (2018-2020)
 
 **Published as *Pooled CRISPRi screening of the cyanobacterium Synechocystis sp PCC 6803 for enhanced industrial phenotypes* in [Nature Communications](https://www.nature.com/articles/s41467-020-15491-7)!**
 
@@ -77,7 +77,7 @@ We designed a CRISPRi respression library for the cyanobacterium *Synechocystis*
 - [ShinyLib app to browse fitness data](https://m-jahn.shinyapps.io/ShinyLib/)
 
 
-### *Synechocystis* resource allocation
+### *Synechocystis* resource allocation (2016-2018)
 
 **Published as *Growth of Cyanobacteria Is Constrained by the Abundance of Light and Carbon Assimilation Proteins* in [Cell Reports](http://doi.org/10.1016/j.celrep.2018.09.040)!**
 
