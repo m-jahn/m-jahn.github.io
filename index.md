@@ -5,33 +5,17 @@ feature_image: "/png/header/header_treemap_bw_blur.png"
 feature_text: HOME
 ---
 
-### Short bio
-
-<img src="/png/profile_2020_circle.png" width="25%" align="right"/>
-
-- In 2022 I started as a bioinformatics researcher at the **Max Planck Unit for the Science of Pathogens** ([MPUSP](https://www.mpusp.mpg.de/)) in Berlin, Germany. The unit is headed by Nobel prize winner Emanuelle Charpentier and investigates a range of topics from RNA biology to CRISPR-Cas systems. The unit works with pathogenic bacteria such as *Streptococcus pyogenes*, the causative agent of scarlet fever in humans.
-- From 2016 to 2022 I was a postdoctoral researcher in the group of Prof. [Paul Hudson](https://www.kth.se/profile/huds/page/2-group-members) at **Science for Life Lab** at KTH, the Royal Institute of Technology in Stockholm, Sweden. My work focused on different projects evolving around **microbial systems biology**, mainly with photo- and lithoautotrophic model organisms, such as cyanobacteria or the 'Knallgas bacterium' *Cupriavidus necator*.
-- From 2011 to 2015 I was doing my PhD at the [Helmholtz Center for Environmental Research](https://www.ufz.de/) in Leipzig, Germany.
-- My primary field of interest is the microbial world. I like to study bacteria at the interphase of experimental and computational biology. I am an enthusiastic user of R and python for statistics, metabolic modeling, and data visualization. I'm also advocating for openness and transparency in the life science. This website bundles information and resources of my scientific projects.
-
-### Quick links
-
-- [Scientific projects](projects)
-- [Publications](publications)
-- [Biography](biography)
-- [Blog](blog)
-
-### Social media + platforms
-
-- [Google Scholar](https://scholar.google.co.uk/citations?user=jApo8PEAAAAJ)
-- [Orcid](https://orcid.org/0000-0002-3913-153X)
-- [github](https://github.com/m-jahn/)
-- [Twitter](https://twitter.com/mich_jahn)
-- [KTH home page](https://www.kth.se/profile/mjahn)
-- [Research gate](https://www.researchgate.net/profile/Michael_Jahn)
-
-
 ### News
+
+#### 2023-06-09 | New CRISPRi library paper on BioRxiv
+
+<img src="/png/projects_crisprlib2_round.png" width="35%" align="right"/>
+
+Together with my colleagues at Science for Life Lab, Stockholm, we have submitted a new manuscript with the second iteration of our CRISPR interference library in cyanobacteria. The paper is currently in revision but can already be accessed on [BioRxiv.org](https://www.biorxiv.org/content/10.1101/2023.02.13.528328v1). It's filled to brim with new insights about fitness tradeoffs in photosynthetic bacteria, such as fitness cost for the highly expressed photosystem and light harvesting protein machines. Special thanks to [Rui Miao](https://www.hudsonlab.se/people) who is the shared first author with me.
+
+#### 2023-06-06 | Joining the Editorial Board of Frontieres
+
+I was recently invited to join the Editorial Board of the journal [Frontiers in Bioengineering and Biotechnology](https://www.frontiersin.org/journals/bioengineering-and-biotechnology). In the role of a review editor, I will occasionally review selected manuscripts for the journal and in return get public recognition for reviewing and editorial activities. This is more work for the me then for the journal, but it's still an opportunity to be actively involved in the publishing process in my field. We will see how it goes.
 
 #### 2022-08-01 | New position at MPUSP, Berlin
 
@@ -58,8 +42,34 @@ Finally, after 4 years of work with dozens of cultivations and millions of seque
 
 The Swedish funding agency FORMAS has awarded me with a grant to continue ongoing work with the fascinating litho-autotrophic bacterium *Ralstonia eutropha* a.k.a. *Cupriavidus necator*. As usual in our lab, we will study this bug and its metabolic capabilities from the systems biology perspective. Many exciting things are planned but the **focus of the project is on resource allocation**: What does a versatile soil bacterium spends its carbon and energy for? Which routes will different substrates take through the cellular metabolism? Under which conditions are enzymes saturated (under-abundance), or are not used at all (over-abundance)? We will try to answer these questions using highly controlled **steady state cultivation**, **proteomics**, **metabolic modeling**, and not yet determined **genetic engineering**. The project will officially start May 2020 and run for two years.
 
+### Short bio
 
-Last updated: 2022-08-01
+<img src="/png/profile_2020_circle.png" width="25%" align="right"/>
+
+- In 2022 I started as a bioinformatics researcher at the **Max Planck Unit for the Science of Pathogens** ([MPUSP](https://www.mpusp.mpg.de/)) in Berlin, Germany. The unit is headed by Nobel prize winner Emanuelle Charpentier and investigates a range of topics from RNA biology to CRISPR-Cas systems. The unit works with pathogenic bacteria such as *Streptococcus pyogenes*, the causative agent of scarlet fever in humans.
+- From 2016 to 2022 I was a postdoctoral researcher in the group of Prof. [Paul Hudson](https://www.kth.se/profile/huds/page/2-group-members) at **Science for Life Lab** at KTH, the Royal Institute of Technology in Stockholm, Sweden. My work focused on different projects evolving around **microbial systems biology**, mainly with photo- and lithoautotrophic model organisms, such as cyanobacteria or the 'Knallgas bacterium' *Cupriavidus necator*.
+- From 2011 to 2015 I was doing my PhD at the [Helmholtz Center for Environmental Research](https://www.ufz.de/) in Leipzig, Germany.
+- My primary field of interest is the microbial world. I like to study bacteria at the interphase of experimental and computational biology. I am an enthusiastic user of R and python for statistics, metabolic modeling, and data visualization. I'm also advocating for openness and transparency in the life science. This website bundles information and resources of my scientific projects.
+
+### Quick links
+
+- [Scientific projects](projects)
+- [Publications](publications)
+- [Biography](biography)
+- [Blog](blog)
+
+### Social media + platforms
+
+- [Google Scholar](https://scholar.google.co.uk/citations?user=jApo8PEAAAAJ)
+- [Orcid](https://orcid.org/0000-0002-3913-153X)
+- [github](https://github.com/m-jahn/)
+- [Twitter](https://twitter.com/mich_jahn)
+- [MPUSP home page](https://www.mpusp.mpg.de/)
+- [Research gate](https://www.researchgate.net/profile/Michael_Jahn)
+
+
+
+Last updated: 2023-06-09
 
 -----
 

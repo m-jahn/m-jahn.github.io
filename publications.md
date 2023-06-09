@@ -6,6 +6,12 @@ feature_image: "/png/header/header_treemap_bw_blur.png"
 feature_text: PUBLICATIONS
 ---
 
+**Jahn M**, Miao R, Shabestary K, Hudson EP. *CRISPR interference screens reveal tradeoffs between growth rate and robustness in Synechocystis sp. PCC 6803 across trophic conditions*. Preprint, **2023**.
+[DOI: 10.1101/2023.02.13.528328](https://doi.org/10.1101/2023.02.13.528328)
+
+Janasch M, Crang N, Asplund-Samuelsson J, Sporre E, Bruch M, Gynnå A, **Jahn M**, Hudson EP. *Thermodynamic limitations of PHB production from formate and fructose in Cupriavidus necator*. Metabolic engineering, **2022**.
+[DOI: 10.1016/j.ymben.2022.08.005](https://doi.org/10.1016/j.ymben.2022.08.005)
+
 **Jahn M**, Crang N, Janasch M, Hober A, Forsström B, Kimler K, Mattausch A, Chen Q, Asplund-Samuelsson J, Hudson EP. *Protein allocation and utilization in the versatile chemolithoautotroph Cupriavidus necator*, eLife, **2021**.
 [DOI: 10.7554/elife.69019](https://doi.org/10.7554/elife.69019)
 
@@ -89,7 +95,7 @@ PMID: 24233076
 PMC: PMC3871124
 [DOI: 10.3390/s131114511](http://doi.org/10.3390/s131114511)
 
-Last updated: 2022-01-18
+Last updated: 2023-06-09
 
 -----
 

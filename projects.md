@@ -8,17 +8,40 @@ feature_text: PROJECTS
 
 This page gives an overview about ongoing (or finished) research projects. Every project contains a short description and links to bioinformatic resources and related publications.
 
+- [New CRISPRi library in *Synechocystis*](#new-crispri-library-in-synechocystis)
 - [*Cupriavidus necator* energy metabolism](#cupriavidus-necator-energy-metabolism)
 - [*Cupriavidus necator* resource allocation](#cupriavidus-necator-resource-allocation)
 - [CRISPRi library in *Synechocystis*](#crispri-library-in-synechocystis)
 - [*Synechocystis* resource allocation](#synechocystis-resource-allocation)
 
-### *Cupriavidus necator* energy metabolism  (2021-2022)
+### New CRISPRi library in *Synechocystis*
+
+2021 - 2023
+
+**In revision** - Preprint is available at [BioRxiv.org](https://www.biorxiv.org/content/10.1101/2023.02.13.528328v1).
+
+<img src="/png/projects_crisprlib2.png" width="100%" align="center"/>
+
+*Light harvesting proteins show high fitness cost in intense light*
+
+This is the second iteration of a CRISPRi respression library for the cyanobacterium *Synechocystis* sp. PCC6803. The library is based on the inhibitory effect of the dCas9 gene and a corresponding short guide RNA (sgRNA) that conveys specificity to the enzyme. Repression of a gene will lead to fitness cost or benefit for the cell. By sequencing the pool of individual CRISPRi strains over time, these fitness effects become visible on a global scale. Besides some difficulties regarding repression efficiency of guide RNAs, this is the most powerful "functional genomics" screening method to date. In the corresponding paper, we addressed the problem of low guide efficiency by developing a machine learning model for efficiency prediction.
+
+**Resources**
+
+- [Repository with all data analysis notebooks on github](https://github.com/m-jahn/R-notebook-crispri-lib)
+- [ShinyLib app to browse fitness data](https://m-jahn.shinyapps.io/ShinyLib/)
+- [Nextflow pipeline for NGS screening data analysis](https://github.com/MPUSP/nf-core-crispriscreen)
+
+### *Cupriavidus necator* energy metabolism
+
+2021 - 2023
 
 In this ongoing study, I am investigating the energy metabolism of the chemolithoautotroph *Cupriavidus necator*. This is a continuation of the [*Cupriavidus necator* resource allocation](#cupriavidus-necator-resource-allocation) project, where, among other things, a barcoded transposon knockout library was created. In this project, we exploit the library to study the growth on different carbon and energy substrates including formate and hydrogen gas which utilize *Cupriavidus*' remarkable ability to fix CO2 using energy from small and volatile chemicals.
 
 
-### *Cupriavidus necator* resource allocation  (2019-2022)
+### *Cupriavidus necator* resource allocation
+
+2019 - 2022
 
 **Published as *Protein allocation and utilization in the versatile chemolithoautotroph Cupriavidus necator* in [eLife](https://elifesciences.org/articles/69019)!**
 
@@ -54,7 +77,9 @@ In this project we want to address some of these shortcomings by analyzing growt
 - [BioCircos map for Ralstonia eutropha, chromosome 2](https://m-jahn.github.io/BioCircos.R/RE_chromosome_2.html)
 
 
-### CRISPRi library in *Synechocystis* (2018-2020)
+### CRISPRi library in *Synechocystis*
+
+2018 - 2020
 
 **Published as *Pooled CRISPRi screening of the cyanobacterium Synechocystis sp PCC 6803 for enhanced industrial phenotypes* in [Nature Communications](https://www.nature.com/articles/s41467-020-15491-7)!**
 
@@ -77,7 +102,9 @@ We designed a CRISPRi respression library for the cyanobacterium *Synechocystis*
 - [ShinyLib app to browse fitness data](https://m-jahn.shinyapps.io/ShinyLib/)
 
 
-### *Synechocystis* resource allocation (2016-2018)
+### *Synechocystis* resource allocation
+
+2016 - 2018
 
 **Published as *Growth of Cyanobacteria Is Constrained by the Abundance of Light and Carbon Assimilation Proteins* in [Cell Reports](http://doi.org/10.1016/j.celrep.2018.09.040)!**
 
@@ -92,7 +119,7 @@ Cyanobacteria are promising hosts for microbial biotechnology as they convert in
 - Coarse grained cell economy models are described in [Metabolic models](/models)
 - Label-free proteomics pipelines for openMS/KNIME are [deposited on github](https://github.com/m-jahn/openMS-workflows)
 
-Last updated: 2022-01-18
+Last updated: 2023-06-09
 
 -----
 
