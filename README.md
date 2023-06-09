@@ -36,11 +36,11 @@ navigation_header:
   url: /example/
 ```
 
-The site can then be constructed and inspected locally before submitting to GitHub. This is done using `bundler`. In a linux terminal, run:
+The site can then be constructed and inspected locally before submitting to GitHub. This is done using `bundler` and `jekyll`. In a linux terminal, run:
 
 ```
 cd path/to/github.io-repo
-sudo apt install bundler  
+sudo apt install bundler jekyll
 
 # install all ruby/gem dependicies
 bundle install
