@@ -6,8 +6,8 @@ feature_image: "/png/header/header_treemap_bw_blur.png"
 feature_text: PUBLICATIONS
 ---
 
-**Jahn M**, Miao R, Shabestary K, Hudson EP. *CRISPR interference screens reveal tradeoffs between growth rate and robustness in Synechocystis sp. PCC 6803 across trophic conditions*. Preprint, **2023**.
-[DOI: 10.1101/2023.02.13.528328](https://doi.org/10.1101/2023.02.13.528328)
+**Jahn M**, Miao R, Shabestary K, Hudson EP. *CRISPR interference screens reveal tradeoffs between growth rate and robustness in Synechocystis sp. PCC 6803 across trophic conditions*. The Plant Cell, **2023**.
+[DOI: 10.1093/plcell/koad208](https://doi.org/10.1093/plcell/koad208)
 
 Janasch M, Crang N, Asplund-Samuelsson J, Sporre E, Bruch M, Gynnå A, **Jahn M**, Hudson EP. *Thermodynamic limitations of PHB production from formate and fructose in Cupriavidus necator*. Metabolic engineering, **2022**.
 [DOI: 10.1016/j.ymben.2022.08.005](https://doi.org/10.1016/j.ymben.2022.08.005)

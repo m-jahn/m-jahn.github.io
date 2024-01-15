@@ -18,7 +18,9 @@ This page gives an overview about ongoing (or finished) research projects. Every
 
 2021 - 2023
 
-**In revision** - Preprint is available at [BioRxiv.org](https://www.biorxiv.org/content/10.1101/2023.02.13.528328v1).
+**Published as *CRISPR interference screens reveal growth–robustness tradeoffs in Synechocystis sp. PCC 6803 across growth conditions* in [The Plant Cell](https://doi.org/10.1093/plcell/koad208)**
+
+Preprint is available at [BioRxiv.org](https://www.biorxiv.org/content/10.1101/2023.02.13.528328v1).
 
 <img src="/png/projects_crisprlib2.png" width="100%" align="center"/>
 

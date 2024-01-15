@@ -20,6 +20,7 @@ model biotechnological process using *Pseudomonas putida*’
 
 ### Conference presentations (talks)
 
+- **2023** - **Microbial Stress Meeting** in Vienna
 - **2020** - **EWBC 11** - 11th European Workshop on the Biology of Cyanobacteria, Porto, Portugal (virtual)
 - **2019** - **NPC 14** - Nordic congress on photosynthesis, Turku, Finland
 - **2018** - **4th Applied Synthetic Biology meeting** - Toulouse, France
@@ -58,7 +59,7 @@ I'm an active reviewer for many microbiology and biotechnology journals. Check m
 - reviews for Frontiers in Biotechnology: 1
 - reviews for Analyst: 1
 
-Last updated: 2022-08-01
+Last updated: 2024-01-15
 
 -----
 

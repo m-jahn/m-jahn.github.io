@@ -7,6 +7,12 @@ feature_text: HOME
 
 ### News
 
+#### 2023-07-26 | New CRISPRi library paper published in [The Plant Cell](https://doi.org/10.1093/plcell/koad208)
+
+Very happy that our newest CRISPRi library paper was finally published in The Plant Cell (Oxford University Press).
+The paper takes a deep dive into the subtle tradeoffs between growth rate and growth robustness in photosynthetic bacteria.
+All fitness data are available online in my [R Shiny App ShinyLib](https://m-jahn.shinyapps.io/ShinyLib/).
+
 #### 2023-06-09 | New CRISPRi library paper on BioRxiv
 
 <img src="/png/projects_crisprlib2_round.png" width="35%" align="right"/>
@@ -69,7 +75,7 @@ The Swedish funding agency FORMAS has awarded me with a grant to continue ongoin
 
 
 
-Last updated: 2023-06-09
+Last updated: 2024-01-15
 
 -----
 

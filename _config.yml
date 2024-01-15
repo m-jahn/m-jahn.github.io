@@ -41,6 +41,8 @@ navigation_header:
   url: /projects/
 - title: R packages
   url: /rpackages/
+- title: Pipelines
+  url: /pipelines/
 - title: Metabolic models
   url: /models/
 - title: Publications
