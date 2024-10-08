@@ -7,6 +7,10 @@ feature_text: HOME
 
 ### News
 
+#### 2024-10-08 | New paper on energy metabolism of *Cupriavidus necator* published in [AEM](https://doi.org/10.1128/aem.00748-24)
+
+We published our second paper about *C.necator* using a barcoded transposon library to study its energy metabolism. This is not only a continuation of [our previous work](https://elifesciences.org/articles/69019) but also a systematic survey in the spirit of the landmark paper by R. Cramm, 2008 -- in this extensive review, the author meticulously collected all known information about the energy metabolism of this interesting organism. Our work investigated the relative importance of all formate dehydrogenases, hydrogenases, and electron transport chain complexes *experimentally*, with several remarkable findings. This study was a fruitful collaboration between three groups that I am sincerely grateful for, [Paul Hudsons lab](https://www.hudsonlab.se/), [Oliver Lenz' lab](https://www.tu.berlin/biophys-chemie/lenz-lab/), and [Emmanuelle Charpentier's lab](https://www.mpusp.mpg.de/).
+
 #### 2023-07-26 | New CRISPRi library paper published in [The Plant Cell](https://doi.org/10.1093/plcell/koad208)
 
 Very happy that our newest CRISPRi library paper was finally published in The Plant Cell (Oxford University Press).
@@ -19,7 +23,7 @@ All fitness data are available online in my [R Shiny App ShinyLib](https://m-jah
 
 Together with my colleagues at Science for Life Lab, Stockholm, we have submitted a new manuscript with the second iteration of our CRISPR interference library in cyanobacteria. The paper is currently in revision but can already be accessed on [BioRxiv.org](https://www.biorxiv.org/content/10.1101/2023.02.13.528328v1). It's filled to brim with new insights about fitness tradeoffs in photosynthetic bacteria, such as fitness cost for the highly expressed photosystem and light harvesting protein machines. Special thanks to [Rui Miao](https://www.hudsonlab.se/people) who is the shared first author with me.
 
-#### 2023-06-06 | Joining the Editorial Board of Frontieres
+#### 2023-06-06 | Joining the Editorial Board of Frontiers
 
 I was recently invited to join the Editorial Board of the journal [Frontiers in Bioengineering and Biotechnology](https://www.frontiersin.org/journals/bioengineering-and-biotechnology). In the role of a review editor, I will occasionally review selected manuscripts for the journal and in return get public recognition for reviewing and editorial activities. This is more work for the me then for the journal, but it's still an opportunity to be actively involved in the publishing process in my field. We will see how it goes.
 
@@ -75,7 +79,7 @@ The Swedish funding agency FORMAS has awarded me with a grant to continue ongoin
 
 
 
-Last updated: 2024-01-15
+Last updated: 2024-10-08
 
 -----
 

@@ -6,6 +6,9 @@ feature_image: "/png/header/header_treemap_bw_blur.png"
 feature_text: PUBLICATIONS
 ---
 
+**Jahn M**, Crang N, Gynnå AH, Kabova D, Frielingsdorf S, Lenz O, Charpentier E, Hudson EP. *The energy metabolism of Cupriavidus necator in different trophic conditions*. Appl Environ Microbiol, **2024**.
+[DOI: 10.1128/aem.00748-24](https://doi.org/10.1128/aem.00748-24)
+
 **Jahn M**, Miao R, Shabestary K, Hudson EP. *CRISPR interference screens reveal tradeoffs between growth rate and robustness in Synechocystis sp. PCC 6803 across trophic conditions*. The Plant Cell, **2023**.
 [DOI: 10.1093/plcell/koad208](https://doi.org/10.1093/plcell/koad208)
 
@@ -95,7 +98,7 @@ PMID: 24233076
 PMC: PMC3871124
 [DOI: 10.3390/s131114511](http://doi.org/10.3390/s131114511)
 
-Last updated: 2023-06-09
+Last updated: 2024-10-08
 
 -----
 
