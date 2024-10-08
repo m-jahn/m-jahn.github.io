@@ -8,38 +8,32 @@ feature_text: PROJECTS
 
 This page gives an overview about ongoing (or finished) research projects. Every project contains a short description and links to bioinformatic resources and related publications.
 
-- [New CRISPRi library in *Synechocystis*](#new-crispri-library-in-synechocystis)
 - [*Cupriavidus necator* energy metabolism](#cupriavidus-necator-energy-metabolism)
 - [*Cupriavidus necator* resource allocation](#cupriavidus-necator-resource-allocation)
+- [New CRISPRi library in *Synechocystis*](#new-crispri-library-in-synechocystis)
 - [CRISPRi library in *Synechocystis*](#crispri-library-in-synechocystis)
 - [*Synechocystis* resource allocation](#synechocystis-resource-allocation)
 
-### New CRISPRi library in *Synechocystis*
-
-2021 - 2023
-
-**Published as *CRISPR interference screens reveal growth–robustness tradeoffs in Synechocystis sp. PCC 6803 across growth conditions* in [The Plant Cell](https://doi.org/10.1093/plcell/koad208)**
-
-Preprint is available at [BioRxiv.org](https://www.biorxiv.org/content/10.1101/2023.02.13.528328v1).
-
-<img src="/png/projects_crisprlib2.png" width="100%" align="center"/>
-
-*Light harvesting proteins show high fitness cost in intense light*
-
-This is the second iteration of a CRISPRi respression library for the cyanobacterium *Synechocystis* sp. PCC6803. The library is based on the inhibitory effect of the dCas9 gene and a corresponding short guide RNA (sgRNA) that conveys specificity to the enzyme. Repression of a gene will lead to fitness cost or benefit for the cell. By sequencing the pool of individual CRISPRi strains over time, these fitness effects become visible on a global scale. Besides some difficulties regarding repression efficiency of guide RNAs, this is the most powerful "functional genomics" screening method to date. In the corresponding paper, we addressed the problem of low guide efficiency by developing a machine learning model for efficiency prediction.
-
-**Resources**
-
-- [Repository with all data analysis notebooks on github](https://github.com/m-jahn/R-notebook-crispri-lib)
-- [ShinyLib app to browse fitness data](https://m-jahn.shinyapps.io/ShinyLib/)
-- [Nextflow pipeline for NGS screening data analysis](https://github.com/MPUSP/nf-core-crispriscreen)
 
 ### *Cupriavidus necator* energy metabolism
 
-2021 - 2023
+2021 - 2024
 
-In this ongoing study, I am investigating the energy metabolism of the chemolithoautotroph *Cupriavidus necator*. This is a continuation of the [*Cupriavidus necator* resource allocation](#cupriavidus-necator-resource-allocation) project, where, among other things, a barcoded transposon knockout library was created. In this project, we exploit the library to study the growth on different carbon and energy substrates including formate and hydrogen gas which utilize *Cupriavidus*' remarkable ability to fix CO2 using energy from small and volatile chemicals.
+**Published as *The energy metabolism of Cupriavidus necator in different trophic conditions* in [Appl Environ Microbiol](https://doi.org/10.1128/aem.00748-24)**
 
+Preprint is available at [BioRxiv.org](https://www.biorxiv.org/content/10.1101/2024.02.26.582058v2).
+
+<img src="/png/projects_cnecator_energy.png" width="100%" align="center"/>
+
+*A barcoded transposon library was used to screen contribution of each gene to fitness.*
+
+In a continuation of the [*Cupriavidus necator* resource allocation](#cupriavidus-necator-resource-allocation) project, I am investigating the energy metabolism of this versatile chemolithoautotroph. A barcoded transposon knockout library is used to study the growth on different carbon and energy sources including the 1-carbon acid formic acid and hydrogen gas, which utilize *Cupriavidus*' remarkable ability to fix CO2 and obtain energy from oxidation of small compunds such as formate or hydrogen. A particular focus was on gene fitness contribution for the molybdenum cofactor, the formate dehydrogenases, the various hydrogenases, and the electron transport chain. We found for example that *C. necator* utilizes both membrane bound and soluble hydrogenases for growth on hydrogen, but does only utilize the soluble formate dehydrogenase for growth on formate.
+
+**Resources**
+
+- [ShinyLib app to browse fitness data](https://m-jahn.shinyapps.io/ShinyLib/)
+- [ShinyProt app to browse proteomics data](https://m-jahn.shinyapps.io/ShinyProt/)
+- [Giothub repo with analysis pipelines](https://github.com/m-jahn/R-notebook-ralstonia-energy)
 
 ### *Cupriavidus necator* resource allocation
 
@@ -77,6 +71,27 @@ In this project we want to address some of these shortcomings by analyzing growt
 - [BioCircos map for Ralstonia eutropha, pHG1](https://m-jahn.github.io/BioCircos.R/RE_pHG1.html)
 - [BioCircos map for Ralstonia eutropha, chromosome 1](https://m-jahn.github.io/BioCircos.R/RE_chromosome_1.html)
 - [BioCircos map for Ralstonia eutropha, chromosome 2](https://m-jahn.github.io/BioCircos.R/RE_chromosome_2.html)
+
+
+### New CRISPRi library in *Synechocystis*
+
+2021 - 2023
+
+**Published as *CRISPR interference screens reveal growth–robustness tradeoffs in Synechocystis sp. PCC 6803 across growth conditions* in [The Plant Cell](https://doi.org/10.1093/plcell/koad208)**
+
+Preprint is available at [BioRxiv.org](https://www.biorxiv.org/content/10.1101/2023.02.13.528328v1).
+
+<img src="/png/projects_crisprlib2.png" width="100%" align="center"/>
+
+*Light harvesting proteins show high fitness cost in intense light*
+
+This is the second iteration of a CRISPRi respression library for the cyanobacterium *Synechocystis* sp. PCC6803. The library is based on the inhibitory effect of the dCas9 gene and a corresponding short guide RNA (sgRNA) that conveys specificity to the enzyme. Repression of a gene will lead to fitness cost or benefit for the cell. By sequencing the pool of individual CRISPRi strains over time, these fitness effects become visible on a global scale. Besides some difficulties regarding repression efficiency of guide RNAs, this is the most powerful "functional genomics" screening method to date. In the corresponding paper, we addressed the problem of low guide efficiency by developing a machine learning model for efficiency prediction.
+
+**Resources**
+
+- [Repository with all data analysis notebooks on github](https://github.com/m-jahn/R-notebook-crispri-lib)
+- [ShinyLib app to browse fitness data](https://m-jahn.shinyapps.io/ShinyLib/)
+- [Nextflow pipeline for NGS screening data analysis](https://github.com/MPUSP/nf-core-crispriscreen)
 
 
 ### CRISPRi library in *Synechocystis*
@@ -121,7 +136,7 @@ Cyanobacteria are promising hosts for microbial biotechnology as they convert in
 - Coarse grained cell economy models are described in [Metabolic models](/models)
 - Label-free proteomics pipelines for openMS/KNIME are [deposited on github](https://github.com/m-jahn/openMS-workflows)
 
-Last updated: 2023-06-09
+Last updated: 2024-10-08
 
 -----
 
