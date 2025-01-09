@@ -6,6 +6,9 @@ feature_image: "/png/header/publications.jpg"
 feature_text: ""
 ---
 
+Wulff TF, Ahmed-Begrich R, Hahnke K, **Jahn M**, Charpentier E. *Novel assembly of the SF370 strain of the important human pathogen Streptococcus pyogenes serotype M1*. Microbiol Resour Announce, **2024**.
+[DOI: 10.1128/mra.01197-24](https://doi.org/10.1128/mra.01197-24)
+
 **Jahn M**, Crang N, Gynnå AH, Kabova D, Frielingsdorf S, Lenz O, Charpentier E, Hudson EP. *The energy metabolism of Cupriavidus necator in different trophic conditions*. Appl Environ Microbiol, **2024**.
 [DOI: 10.1128/aem.00748-24](https://doi.org/10.1128/aem.00748-24)
 

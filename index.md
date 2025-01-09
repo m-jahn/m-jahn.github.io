@@ -7,6 +7,10 @@ feature_text: ""
 
 ### News
 
+#### 2025-01-09 | Genome sequence update of *Streptococcus pyogenes* published in [MRA](https://doi.org/10.1128/mra.01197-24)
+
+We recently noticed problems to map next generation sequencing reads to certain regions of the *Streptococcus* genome, our pet organism for the study of pathogenic bacteria at the MPUSP. An extensive re-sequencing effort using short and long read methods revealed that the original assembly contained various errors, particularly for repetitive rRNA/tRNA operons. Our new assembly fixes these errors and adds two new tRNAs, becoming the current reference assembly for *Streptococcus pyogenes*. It's available on [NCBI datasets](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_043231225.1/).
+
 #### 2024-10-08 | New paper on energy metabolism of *Cupriavidus necator* published in [AEM](https://doi.org/10.1128/aem.00748-24)
 
 We published our second paper about *C.necator* using a barcoded transposon library to study its energy metabolism. This is not only a continuation of [our previous work](https://elifesciences.org/articles/69019) but also a systematic survey in the spirit of the landmark paper by R. Cramm, 2008 -- in this extensive review, the author meticulously collected all known information about the energy metabolism of this interesting organism. Our work investigated the relative importance of all formate dehydrogenases, hydrogenases, and electron transport chain complexes *experimentally*, with several remarkable findings. This study was a fruitful collaboration between three groups that I am sincerely grateful for, [Paul Hudsons lab](https://www.hudsonlab.se/), [Oliver Lenz' lab](https://www.tu.berlin/biophys-chemie/lenz-lab/), and [Emmanuelle Charpentier's lab](https://www.mpusp.mpg.de/).
