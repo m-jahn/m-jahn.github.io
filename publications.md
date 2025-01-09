@@ -2,8 +2,8 @@
 layout: page
 title: "Publications"
 permalink: /publications/
-feature_image: "/png/header/header_treemap_bw_blur.png"
-feature_text: PUBLICATIONS
+feature_image: "/png/header/publications.jpg"
+feature_text: ""
 ---
 
 **Jahn M**, Crang N, Gynnå AH, Kabova D, Frielingsdorf S, Lenz O, Charpentier E, Hudson EP. *The energy metabolism of Cupriavidus necator in different trophic conditions*. Appl Environ Microbiol, **2024**.

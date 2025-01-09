@@ -2,8 +2,8 @@
 layout: page
 title: "Pipelines"
 permalink: /pipelines/
-feature_image: "/png/header/header_treemap_bw_blur.png"
-feature_text: PIPELINES
+feature_image: "/png/header/pipelines.jpg"
+feature_text: ""
 ---
 
 

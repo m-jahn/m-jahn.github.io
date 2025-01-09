@@ -1,8 +1,8 @@
 ---
 title: Michael Jahn, PhD
 layout: page
-feature_image: "/png/header/header_treemap_bw_blur.png"
-feature_text: HOME
+feature_image: "/png/header/home.jpg"
+feature_text: ""
 ---
 
 ### News

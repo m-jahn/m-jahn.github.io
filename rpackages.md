@@ -2,8 +2,8 @@
 layout: page
 title: "R packages"
 permalink: /rpackages/
-feature_image: "/png/header/header_treemap_bw_blur.png"
-feature_text: R PACKAGES AND APPS
+feature_image: "/png/header/rpackages.jpg"
+feature_text: ""
 ---
 
 - [fluctuator](#fluctuator)

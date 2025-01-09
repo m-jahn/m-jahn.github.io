@@ -2,8 +2,8 @@
 layout: page
 title: "Projects"
 permalink: /projects/
-feature_image: "/png/header/header_treemap_bw_blur.png"
-feature_text: PROJECTS
+feature_image: "/png/header/projects.jpg"
+feature_text: ""
 ---
 
 This page gives an overview about ongoing (or finished) research projects. Every project contains a short description and links to bioinformatic resources and related publications.

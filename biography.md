@@ -2,8 +2,8 @@
 layout: page
 title: "Biography"
 permalink: /biography/
-feature_image: "/png/header/header_treemap_bw_blur.png"
-feature_text: BIOGRAPHY
+feature_image: "/png/header/biography.jpg"
+feature_text: ""
 ---
 
 ### Current position

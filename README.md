@@ -17,7 +17,7 @@ This website is made with Jekyll and uses the [Alembic](https://alembic.darn.es/
 
 Template content can be modified or new content added by creating a markdown document for a new page (`example.md`). The new markdown page needs to have a `yml` header specifying its name and page style:
 
-```
+```yaml
 ---
 title: My new page
 layout: page
@@ -27,7 +27,7 @@ feature_image: "/png/example.png"
 
 But that's not enough to make the page accessible through the menu. For this purpose we also need a menu entry in `_config.yml`, which looks like the following entry. Note that the url matches the name of the `*.md` document, not the page name.
 
-```
+```yaml
 # Header nav
 navigation_header:
 - title: Home
@@ -38,7 +38,7 @@ navigation_header:
 
 The site can then be constructed and inspected locally before submitting to GitHub. This is done using `bundler` and `jekyll`. In a linux terminal, run:
 
-```
+```bash
 cd path/to/github.io-repo
 sudo apt install bundler jekyll
 
@@ -56,6 +56,6 @@ When running the command above results in an error message similar to that:
 
 The solution is to add the webrick library by running this command in the terminal:
 
-```
+```bash
 bundle add webrick
 ```
