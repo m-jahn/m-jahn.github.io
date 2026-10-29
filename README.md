@@ -5,57 +5,43 @@ Follow the link above to browse my github.io page. Here are quick links to some 
 
 ## Quick links
 
-- [About this page](https://m-jahn.github.io/about/)
-- [Resources for scientific projects](https://m-jahn.github.io/projects/)
-- [My publications](https://m-jahn.github.io/publications/)
-- [Curriculum vitae](https://m-jahn.github.io/CV/)
-
+- [Short CV](https://m-jahn.github.io/categories/about/)
+- [Scientific projects](https://m-jahn.github.io/categories/projects/)
+- [Publications](https://m-jahn.github.io/categories/publications/)
+- [Blog](https://m-jahn.github.io/categories/blog/)
 
 ## About this page
 
-This website is made with Jekyll and uses the [Alembic](https://alembic.darn.es/) theme. To use this theme as a simple starting point for a github page, check out [the Jekyll theme gem](https://alembic.darn.es/#as-a-jekyll-theme) or the [GitHub Pages remote theme](https://github.com/daviddarnes/alembic-kit/tree/remote-theme). 
+This website is made with Hugo and uses the [clean white theme](https://github.com/zhaohuabing/hugo-theme-cleanwhite). 
 
-Template content can be modified or new content added by creating a markdown document for a new page (`example.md`). The new markdown page needs to have a `yml` header specifying its name and page style:
+Template content can be modified or new content added by creating a markdown document for a new post in `content/post/<new-post>.md`. The new markdown page needs to have a `yml` header specifying its name and page style:
 
 ```yaml
 ---
-title: My new page
-layout: page
-feature_image: "/png/example.png"
+layout:     post
+title:      "template post"
+subtitle:   "all fields included"
+description: 
+excerpt: 
+date: 2015-01-01
+author: Michael Jahn
+image: 
+tags:
+  - News
+URL: ""
+categories: [ News ]
 ---
 ```
 
-But that's not enough to make the page accessible through the menu. For this purpose we also need a menu entry in `_config.yml`, which looks like the following entry. Note that the url matches the name of the `*.md` document, not the page name.
-
-```yaml
-# Header nav
-navigation_header:
-- title: Home
-  url: /
-- title: My new page
-  url: /example/
-```
-
-The site can then be constructed and inspected locally before submitting to GitHub. This is done using `bundler` and `jekyll`. In a linux terminal, run:
+The site can be built and inspected locally before submitting to GitHub. This is done using `hugo` and predefined `pixi` tasks. In a linux terminal, run:
 
 ```bash
 cd path/to/github.io-repo
-sudo apt install bundler jekyll
-
-# install all ruby/gem dependicies
-bundle install
-
-# test page and follow the proposed link
-bundle exec jekyll serve
+pixi run live
 ```
 
-## Issues
-
-When running the command above results in an error message similar to that:
-`cannot load such file -- webrick (LoadError)'
-
-The solution is to add the webrick library by running this command in the terminal:
+To only build the page without starting the live server, run:
 
 ```bash
-bundle add webrick
+pixi run build
 ```

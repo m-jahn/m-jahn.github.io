@@ -1,8 +1,4 @@
-vendor/*
-_site/*
-Gemfile.lock
-.sass.cache
-.sass-cache/*
-.jekyll-cache/*
-.bundle
-.Rhistory
+public/*
+trash/*
+.pixi/*
+.hugo_build.lock
