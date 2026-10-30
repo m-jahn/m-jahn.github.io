@@ -1,0 +1,49 @@
+name: Test deployment
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  generate-page:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: prefix-dev/setup-pixi@v0
+        with:
+          cache: true
+
+      - name: Generate page
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: pixi run build
+
+      - name: Upload page data
+        uses: actions/upload-artifact@v4
+        with:
+          if-no-files-found: error
+          name: generated-page
+          path: ./public
+
+  test-deploy:
+    name: Test deployment
+    runs-on: ubuntu-latest
+    needs: generate-page
+    steps:
+      - name: Download generated data
+        uses: actions/download-artifact@v4
+        with:
+          name: generated-page
+          path: ./public
+
+      - name: Test page is served
+        run: |
+          python3 -m http.server 8080 --directory ./public >/tmp/site-test.log 2>&1 &
+          sleep 3
+          curl -fsS --retry 10 --retry-delay 1 --retry-all-errors http://127.0.0.1:8080/ > /tmp/site-response.html
+          test -s /tmp/site-response.html
