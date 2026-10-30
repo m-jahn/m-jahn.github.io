@@ -1,0 +1,165 @@
+baseurl = "https://m-jahn.github.io"
+title = "Michael Jahn"
+theme = "hugo-theme-cleanwhite"
+languageCode = "en-us"
+preserveTaxonomyNames = true
+hasCJKLanguage = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[services]
+  # Enable comments by entering your Disqus shortname
+  [services.disqus]
+    shortname = ""
+  [services.googleAnalytics]
+    id = ""
+
+[pagination]
+  pagerSize = 8 # frontpage pagination
+
+[outputs]
+home = ["HTML", "RSS", "Algolia"]
+
+[params]
+  header_image = "/png/20260912_153526.jpg"
+  SEOTitle = "Michael Jahn's Blog | Michael Jahn"
+  description = "Michael Jahn, PhD."
+  keyword = "Michael Jahn, m-jahn, Blog, Personal Website, Computational Biology, Omics, Bioinformatics, Open Science, Github"
+  slogan = "Computational Biology, Open Science, and Everything Else."
+  upstreamAttribution = true
+
+  image_404 = "png/404-bg.jpg"
+  title_404 = "Page Not Found :("
+  omit_categories = false
+
+  # leancloud storage for page view counter
+  page_view_counter = false
+  leancloud_app_id = ""
+  leancloud_app_key = ""
+
+  # algolia site search
+  algolia_search = true
+  algolia_appId = ""
+  algolia_indexName = ""
+  algolia_apiKey = ""
+
+  # Sidebar settings
+  sidebar_about_description = "Michael Jahn, PhD.\nComputational Biologist and Open Science Advocate."
+  sidebar_avatar = "png/profile_2020.png"
+
+  featured_tags = true 
+  featured_condition_size = 0
+
+  # Baidu Analytics
+  ba_track_id = ""
+  
+  # We need a proxy to access Disqus api in China
+  # Follow https://github.com/zhaohuabing/disqus-php-api to set up your own disqus proxy
+  disqus_proxy = ""
+  disqus_site = ""
+
+  # Twikoo comments
+  # Follow https://twikoo.js.org/ to set up your own env_id
+  twikoo_env_id = ""
+
+  # Artalk comments
+  # Follow https://artalk.js.org/ to set up your own server
+  artalk_enable = true
+  artalk_server = "https://xxx.xxx.com"
+  artalk_site = "xxx blog"
+
+  friends = false
+  bookmarks = true
+  about_me = true
+
+  # Last posts
+  last_posts = true
+  last_posts_title = "LAST POSTS"
+  last_posts_count = 5
+
+  # Include any custom CSS and/or JS files, url or relative to /static folder
+  #custom_css = ["css/lightbox.css", "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css", "css/main.css"]
+  #custom_js = ["js/lightbox.js", "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js", "js/main.js"]
+
+  [params.social]
+  rss            = true 
+  email          = "jahn@mpusp.mpg.de"
+  googlescholar  = "https://scholar.google.co.uk/citations?user=jApo8PEAAAAJ"
+  twitter        = "https://twitter.com/mich_jahn"
+  linkedin       = "https://www.linkedin.com/in/michael-jahn-246839224/"
+  github         = "https://github.com/m-jahn/"
+  orcid          = "https://orcid.org/0000-0002-3913-153X"
+  #stackoverflow = ""
+  #instagram     = ""
+  #facebook      = ""
+  #wechat        = ""
+  #medium        = ""
+  #slack         = ""
+  #pinterest     = ""
+  #reddit        = ""
+  #gitlab        = ""
+  #mastodon      = ""
+  #keybase       = ""
+  #xing          = ""
+  #git           = ""
+  
+  [[params.bookmark_link]]
+  title = "My ORCID Account"
+  href = "https://orcid.org/0000-0002-3913-153X"
+  [[params.bookmark_link]]
+  title =  "My Personal GitHub Page"
+  href =  "https://github.com/m-jahn"
+  [[params.bookmark_link]]
+  title = "MPUSP GitHub Page"
+  href =  "https://github.com/MPUSP"
+  [[params.bookmark_link]]
+  title =  "Research Gate"
+  href = "https://www.researchgate.net/profile/Michael_Jahn"
+  
+  [[params.additional_menus]]
+  title =  "ARCHIVE"
+  href =  "/archive/"
+  [[params.additional_menus]]
+  title =  "PROJECTS"
+  href =  "/projects/"
+  [[params.additional_menus]]
+  title =  "CODE"
+  href =  "/code/"
+  [[params.additional_menus]]
+  title =  "ABOUT"
+  href =  "/about/"
+
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["categories", "tags"] 
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 2
+    startLevel = 1
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+
+[mediaTypes]
+  [mediaTypes.'font/woff']
+    suffixes = ['woff']
+  [mediaTypes.'font/woff2']
+    suffixes = ['woff2']

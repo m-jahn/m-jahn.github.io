@@ -1,0 +1,60 @@
+
+{{ define "main" }}
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container">
+            {{ if eq (.Param "multilingual") true }}
+                {{ partial "multilingual-sel.html" . }}
+
+                <!-- Chinese Version -->
+                <div class="zh post-container">
+                    {{$file :=  "/about/index-zh.md"}}
+                    {{ $file | readFile | markdownify}}
+                </div>
+            
+                <!-- English Version -->
+                <div class="en post-container">
+                    {{ .Content }}
+                </div>
+            {{ else }}
+                {{ .Content }}
+            {{ end }}
+             
+            {{ partial "comments.html" . }}
+            
+            </div>
+            
+            {{ partial "sidebar.html" . }}
+        </div>
+    </div>
+</article>
+
+{{ end }}
+
+{{ define "header" }}
+<style type="text/css">
+  header.intro-header {
+    background-image: url('{{ if .Params.image }}{{ .Params.image | relURL }}{{ else }}{{ .Site.Params.header_image | relURL }}{{ end }}')
+  }
+</style>
+<header class="intro-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="site-heading">
+          <h1>{{ .Title }}</h1>
+          <span class="subheading">{{ .Params.subtitle }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{{ end }}
