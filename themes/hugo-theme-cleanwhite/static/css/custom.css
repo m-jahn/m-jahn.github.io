@@ -2113,6 +2113,19 @@ li.pingback:first-child {
   -webkit-transition: opacity 0.2s ease;
           transition: opacity 0.2s ease;
 }
+.post-preview .tag {
+  color: var(--color-text-muted) !important;
+  border-color: var(--color-text-muted) !important;
+  background: transparent !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+.post-preview .tag:hover,
+.post-preview .tag:active,
+.post-preview .tag:focus {
+  color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+}
 .site-header .search-form-container input {
   margin: 0;
   height: 100%;
