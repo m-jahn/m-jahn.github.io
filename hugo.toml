@@ -80,9 +80,8 @@ home = ["HTML", "RSS", "Algolia"]
   last_posts_count = 5
 
   # Include any custom CSS and/or JS files, url or relative to /static folder
-  #custom_css = ["css/lightbox.css", "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css", "css/main.css"]
-  #custom_js = ["js/lightbox.js", "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js", "js/main.js"]
-
+  custom_css = ["css/additional.css"]
+  
   [params.social]
   rss            = true 
   email          = "jahn@mpusp.mpg.de"

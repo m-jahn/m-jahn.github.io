@@ -1,3 +1,6 @@
+[![Deployment status](https://github.com/m-jahn/m-jahn.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/m-jahn/m-jahn.github.io/actions/workflows/deploy.yml)
+[![Test deployment](https://github.com/m-jahn/m-jahn.github.io/actions/workflows/test-deploy.yml/badge.svg)](https://github.com/m-jahn/m-jahn.github.io/actions/workflows/test-deploy.yml)
+[![GitHub last commit](https://img.shields.io/github/last-commit/m-jahn/m-jahn.github.io)](https://github.com/m-jahn/m-jahn.github.io/commits/main)
 
 ## Repository for **[m-jahn.github.io](https://m-jahn.github.io)**
 
