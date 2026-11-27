@@ -23,7 +23,7 @@ hasCJKLanguage = true
 home = ["HTML", "RSS", "Algolia"]
 
 [params]
-  header_image = "/png/20260912_153526.jpg"
+  header_image = "/png/bg_clouds.jpg"
   SEOTitle = "Michael Jahn's Blog | Michael Jahn"
   description = "Michael Jahn, PhD."
   keyword = "Michael Jahn, m-jahn, Blog, Personal Website, Computational Biology, Omics, Bioinformatics, Open Science, Github"
@@ -80,7 +80,8 @@ home = ["HTML", "RSS", "Algolia"]
   last_posts_count = 5
 
   # Include any custom CSS and/or JS files, url or relative to /static folder
-  custom_css = ["css/additional.css"]
+  custom_css = ["css/additional.css", "css/fade-transition.css"]
+  custom_js = ["js/fade-transition.js"]
   
   [params.social]
   rss            = true 

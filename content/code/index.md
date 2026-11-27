@@ -4,7 +4,7 @@ title:      "Code"
 subtitle:   "Software Packages and Workflows."
 date:       2026-10-14
 author:     "m-jahn"
-image:      "/png/20260911_143223.jpg"
+image:      "/png/bg_pool.jpg"
 ---
 
 <h2>Quick Links</h2>

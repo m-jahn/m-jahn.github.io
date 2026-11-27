@@ -4,7 +4,7 @@ title:      "About me"
 subtitle:   "Education, Positions, Outreach"
 date:       2026-10-14
 author:     "m-jahn"
-image:      "/png/20260911_143223.jpg"
+image:      "/png/bg_field.jpg"
 ---
 
 ### Current position

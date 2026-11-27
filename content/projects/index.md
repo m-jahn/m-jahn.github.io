@@ -4,7 +4,7 @@ title:      "Projects"
 subtitle:   "Overview of ongoing and finished research projects"
 date:       2026-10-14
 author:     "m-jahn"
-image:      "/png/20260911_143223.jpg"
+image:      "/png/bg_charite_bright.jpg"
 ---
 
 This page gives an overview about ongoing (or finished) research projects. Every project contains a short description and links to bioinformatic resources and related publications.
